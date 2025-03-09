@@ -11,6 +11,8 @@ The raw ATAC-seq datasets are from [Lin et al. 2023](https://www.nature.com/arti
 ## Processed Data
 Using the raw datasets, a normalized pseudo bulk matrix was created as saved as a csv file `psd.bulk.zfish_atac.10hpf.lg1x.csv`.
 
+The raw dataset was preprocessed using `scripts/ATAC-Seq-Analysis-Step-3-subset-celltypes.Rmd`. Hence, you can download the raw datasets and run the aforementioned R-script to generate the processed dataset `psd.bulk.zfish_atac.10hpf.lg1x.csv`.
+
 
 ## References
 

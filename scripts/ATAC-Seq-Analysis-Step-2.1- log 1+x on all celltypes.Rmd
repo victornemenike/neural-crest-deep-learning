@@ -1,0 +1,128 @@
+---
+title: "ATAC-Seq-Data-Analysis-QC on all cells Step 1 Pseudo-Bulking and LogNormalisation"
+date: "`r Sys.Date()`"
+author: Xenia Sirodzha
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+---
+
+# Libraries
+
+These are the libraries used
+```{r}
+library(tidyverse) 
+library(binom)
+library(broom)
+library(Seurat) #for rna-seq data, atac-seq data
+library(Signac) #for atac seq data
+```
+
+
+# 1. Data Loading and Exploring 
+
+First I loaded these data sets into R to work with them. The data sets were extracted by Lauren Saunders based from [Lin et al. 2023](https://www.nature.com/articles/s41597-023-02373-y). 
+
+```{r}
+readRDS('../data/Cell-type_Peak_Matrix.rds') -> zfish_snATAC_seq_pk_mtrx #count matrix
+read_delim("../data/atac_all.metaData.txt", delim = ",",
+           col_names = TRUE,  
+           show_col_types = FALSE)-> zfish_mta_data # meta data
+```
+Then, I explored the data with `class()` and `dim()`. 
+The matrix zfish_snATAC_seq_pk_mtrx is a matrix containing the peaks as rownames and columns as cell names and counts as entries. As this is a sparse matrix the 0s are written as dots. In addition, the data frame zfish_mta_data contains the meta data.
+
+```{r}
+class(zfish_snATAC_seq_pk_mtrx)
+class(zfish_mta_data)
+dim(zfish_snATAC_seq_pk_mtrx)
+zfish_snATAC_seq_pk_mtrx[1:10, 1:2]
+zfish_mta_data
+```
+
+For further analysis in this ATAC-Seq-QC to see whether this data set can be used to create a model which predicts chromatin accessibility based on genomic sequence alone, I will create a seurat object with the code below.
+
+```{r}
+zfish_atac=CreateSeuratObject(counts = zfish_snATAC_seq_pk_mtrx, assay = "atac", meta.data = zfish_mta_data) #creating a seurat object
+```
+
+Here is an overview of the seurat object, obtained with the `glimpse` function.
+
+```{r}
+glimpse(zfish_atac)
+```
+
+# 2. Data Transformation
+
+Next the data was transformed.
+Overall it was pseudo bulked,log normalized manually and saved as an RDS file. Pseudo-bulking was performed with the seurat function `AggregateExpression` and `return.seurat = T` was used to save the counts in a new pseudo-bulked matrix `psd.bulk.zfish_atac`. 
+
+```{r}
+psd.bulk.zfish_atac= AggregateExpression(zfish_atac, group.by = "celltype") #pseudobulking
+
+glimpse(psd.bulk.zfish_atac) #output
+```
+
+
+Then this matrix was normalized manually, by dividing the sum of the counts by the number of cells in each celltype multiplying that number by a 1000 for the average in 1000 cells and then transforming the matrix with ln(x+1).
+
+To achieve this, the number of cells of each cell type must be extracted first.
+```{r}
+zfish_atac@meta.data %>% 
+  group_by(celltype) %>% 
+  tally() %>% 
+  pivot_wider(names_from = celltype, values_from = n) %>% 
+  as.matrix() -> n_cells
+n_cells
+```
+
+Then, I employed the following loop to extract the correct number of cells of each cell type to divide the counts of the matrix containing the pseudo-bulk with. 
+```{r}
+#Dividing the counts by the number of cells in each cell type
+
+psd.bulk.zfish_atac$atac[1:5,1:5] #input
+
+for (i in seq_along(colnames(n_cells))) {
+  ct <- colnames(n_cells)[i]  #extracting cell type names
+  
+#loop along cell type names in the pseudo bulk matrix
+  for (j in seq_along(colnames(psd.bulk.zfish_atac$atac))) {
+    atc <- colnames(psd.bulk.zfish_atac$atac)[j]  
+    
+#if the colnames match divide by the number of cells
+    if (atc == ct) {
+      psd.bulk.zfish_atac$atac[,j] <- (psd.bulk.zfish_atac$atac[, j] / n_cells[, i])*1000
+      break  # stop if everything is matched 
+    }
+  }
+}
+
+psd.bulk.zfish_atac$atac[1:5,1:5] #output
+
+```
+After that, the matrix was log transformed in the manner seen below
+
+```{r}
+psd.bulk.zfish_atac=log(psd.bulk.zfish_atac$atac+1)
+
+psd.bulk.zfish_atac[1:10,1:5]
+```
+
+
+Lastly the transformed matrix was saved as a file for further analysis.
+
+```{r eval=FALSE}
+#save as file
+psd.bulk.zfish_atac_df <- as.data.frame(psd.bulk.zfish_atac)
+write_csv(psd.bulk.zfish_atac_df, "../../data/psd.bulk.zfish_atac.lg1x.csv")
+```
+
+
+# Session Info
+
+```{r}
+sessionInfo()
+```

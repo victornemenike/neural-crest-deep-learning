@@ -1,0 +1,204 @@
+---
+title: "ATAC-Seq-Data-Analysis-QC on all cells Step 3: subsetting cells for modelling"
+date: "`r Sys.Date()`"
+author: Xenia Sirodzha (adapted by Victor Emenike)
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+---
+
+The overall goal now is to subset the cells of interest, extract their peaks and convert the peak names to a BED file. This file can be used for the next steps of the ATAC-Seq modelling project.
+
+# Libraries 
+
+These are the packages required for the coding in this document.
+```{r}
+library(tidyverse) 
+library(binom)
+library(lubridate)
+library(broom)
+library(readxl) #for loading excel files
+library(GenomicRanges)#bioconductor package for genomic ranges
+library(Seurat) #for rna-seq data, atac-seq data
+library(Signac) #for atac seq data
+```
+
+
+# Data
+
+First I loaded the ATAC-seq data sets from [this paper](https://www.nature.com/articles/s41597-023-02373-y). 
+```{r}
+readRDS("../data/Cell-type_Peak_Matrix.rds") -> zfish_snATAC_seq_pk_mtrx #count matrix
+read_delim("../data/atac_all.metaData.txt", delim = ",",
+           col_names = TRUE,  
+           show_col_types = FALSE)-> zfish_mta_data # meta data
+```
+
+# Subsetting cells of interest
+
+Then, I subsetted cells of interest with the code below. 
+
+Cells of interest were those which the following conditions applied to:
+- celltypes/clusters with more than 500 cells
+- at least 12hpf old
+- determined and fairly differentiated
+
+This was decided based on previous analysis. This ensures that only represntative data is used for modelling, as this is crucial for successful modelling. 
+
+```{r}
+zfish_mta_data %>% 
+  group_by(celltype) %>% 
+  add_tally() %>% #adding how many cells per cluster to df
+  filter(n>500) %>% #clusters with less than 500 cells
+  filter(!(celltype%in%c("UND","hypoblast","blastomere","epiblast"))) %>%   #removing celltypes we do not want
+  separate_wider_delim(Sample, delim="h", names=c("hpf", "other")) %>% #extracting hpf from the Sample column
+  mutate(hpf=as.numeric(hpf)) %>% # converting hpf to numeric
+  filter(hpf>11) %>%  #removing all cells younger than 12hpf
+  select(...1,Clusters)-> mta.my.cells.12
+
+#overview of cell types 
+mta.my.cells.12 %>% 
+  tally() %>% 
+  arrange(n)
+  
+```
+
+Overall there are no celltypes with less than 345 cells left. However that is less than 500 cells. Moreover than there are a total of 483 neural crest cells which could be used for modelling.
+
+I tried out what happens if we remove all cells younger than 10hpf. 
+```{r}
+zfish_mta_data %>% 
+  group_by(celltype) %>% 
+  add_tally() %>% #adding how many cells per cluster to df
+  filter(n>500) %>% #clusters with less than 500 cells
+  filter(!(celltype%in%c("UND","hypoblast","blastomere","epiblast"))) %>%   #removing celltypes we do not want
+  separate_wider_delim(Sample, delim="h", names=c("hpf", "other")) %>% #extracting hpf from the Sample column
+  mutate(hpf=as.numeric(hpf)) %>% # converting hpf to numeric
+  filter(hpf>9) %>%  #removing all cells younger than 10hpf
+  select(...1,Clusters)-> mta.my.cells.10
+
+#overview of cell types 
+mta.my.cells.10 %>% 
+  tally() %>% 
+  arrange(n)
+  
+```
+
+Then there are no clusters with less than 500 cells and 1177 neural crest cells could be used for modelling. This is why this will be used for further modelling. 
+
+# Filtering data
+
+```{r}
+#extracting cell names as chr vector
+as.character(mta.my.cells.10$...1)-> chr.my.cells.10
+
+#subsetting matrix
+
+zfish_snATAC_seq_pk_mtrx[,c(chr.my.cells.10)] -> zfish_snATAC_seq_pk_mtrx.10hpf
+
+#subsetting peak names 
+rownames(zfish_snATAC_seq_pk_mtrx.10hpf)-> my.peaks.10
+```
+
+```{r}
+
+zfish_snATAC_seq_pk_mtrx.10hpf <- zfish_snATAC_seq_pk_mtrx[,c(chr.my.cells.10)]
+
+selected_cell_names <- colnames(zfish_snATAC_seq_pk_mtrx.10hpf)
+
+zfish_mta_data.10hpf <- zfish_mta_data[zfish_mta_data$...1 %in% selected_cell_names, ]
+```
+
+
+# Data Transformation
+
+
+## Seurat Object
+
+For further analysis in this ATAC-Seq-QC to see whether this data set can be used to create a model which predicts chromatin accessibility based on genomic sequence alone, I will create a seurat object with the code below.
+
+```{r}
+zfish_atac.10hpf =CreateSeuratObject(counts = zfish_snATAC_seq_pk_mtrx.10hpf, assay = "atac", meta.data = zfish_mta_data.10hpf) #creating a seurat object
+```
+
+Here is an overview of the seurat object, obtained with the `glimpse` function.
+
+```{r}
+glimpse(zfish_atac.10hpf)
+```
+
+
+Overall it was pseudo bulked,log normalized manually and saved as an RDS file. Pseudo-bulking was performed with the seurat function `AggregateExpression` and `return.seurat = T` was used to save the counts in a new pseudo-bulked matrix `psd.bulk.zfish_atac.10hpf`. 
+
+## Pseudo-bulking
+```{r}
+psd.bulk.zfish_atac.10hpf= AggregateExpression(zfish_atac.10hpf, group.by = "celltype") #pseudobulking
+
+glimpse(psd.bulk.zfish_atac.10hpf) #output
+```
+
+## Normalization
+Then this matrix was normalized manually, by dividing the sum of the counts by the number of cells in each celltype multiplying that number by a 1000 for the average in 1000 cells and then transforming the matrix with ln(x+1).
+
+To achieve this, the number of cells of each cell type must be extracted first.
+```{r}
+zfish_atac.10hpf@meta.data %>% 
+  group_by(celltype) %>% 
+  tally() %>% 
+  pivot_wider(names_from = celltype, values_from = n) %>% 
+  as.matrix() -> n_cells
+n_cells
+```
+
+
+Employing the following loop to extract the correct number of cells of each cell type to divide the counts of the matrix containing the pseudo-bulk with. 
+```{r}
+#Dividing the counts by the number of cells in each cell type
+
+psd.bulk.zfish_atac.10hpf$atac[1:5,1:5] #input
+
+for (i in seq_along(colnames(n_cells))) {
+  ct <- colnames(n_cells)[i]  #extracting cell type names
+  
+#loop along cell type names in the pseudo bulk matrix
+  for (j in seq_along(colnames(psd.bulk.zfish_atac.10hpf$atac))) {
+    atc <- colnames(psd.bulk.zfish_atac.10hpf$atac)[j]  
+    
+#if the colnames match divide by the number of cells
+    if (atc == ct) {
+      psd.bulk.zfish_atac.10hpf$atac[,j] <- (psd.bulk.zfish_atac.10hpf$atac[, j] / n_cells[, i])*1000
+      break  # stop if everything is matched 
+    }
+  }
+}
+
+psd.bulk.zfish_atac.10hpf$atac[1:5,1:5] #output
+
+```
+
+## Log-transformation
+After that, the matrix was log transformed in the manner seen below
+
+```{r}
+psd.bulk.zfish_atac.10hpf=log(psd.bulk.zfish_atac.10hpf$atac+1)
+
+psd.bulk.zfish_atac.10hpf[1:10,1:5]
+```
+
+# Saving as CSV file
+
+```{r eval=FALSE}
+#save as file
+psd.bulk.zfish_atac.10hpf_df <- as.data.frame(psd.bulk.zfish_atac.10hpf)
+write_csv(psd.bulk.zfish_atac.10hpf_df, "../data/psd.bulk.zfish_atac.10hpf.lg1x.csv")
+```
+
+# Session Info 
+
+```{r}
+#sessionInfo()
+```
+

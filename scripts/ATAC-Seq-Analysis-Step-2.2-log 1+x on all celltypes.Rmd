@@ -1,0 +1,289 @@
+---
+title: "ATAC-Seq-Data-Analysis-QC on all cells Step 2: Visualisation of LogNormalization"
+date: "`r Sys.Date()`"
+author: Xenia Sirodzha
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+---
+
+# Libraries
+
+```{r}
+library(tidyverse) 
+library(binom)
+library(lubridate)
+library(broom)
+library(scales) #for scale transformations
+library(cowplot) #arranging plots 
+library(ggpubr)
+library(ggridges)
+library(ggthemes) #stylising plots
+library(ggplot2)
+library(ggsci) #color palettes
+library(readxl) #for loading excel files
+library(Seurat) #for rna-seq data, atac-seq data
+library(Signac) #for atac seq data
+library(sparsevctrs)
+```
+
+# 1 Data Loading
+
+```{r}
+readRDS('../data/Cell-type_Peak_Matrix.rds') -> zfish_snATAC_seq_pk_mtrx
+readRDS("../data/psd.bulk.zfish_atac.lg1x.rds") -> psd.bulk.zfish_atac.lg1x
+psd.bulk.zfish_atac.lg1x[1:5,1:5]
+```
+
+
+# 2 Data Transformation for Plotting
+After normalisation, I prepared the data to plot with tidyverse. First, I converted the matrix to a data frame, then I calculated the values which will be plotted as well(sum of pk_counts, coefficient of variance (cv))
+
+```{r}
+as.data.frame(psd.bulk.zfish_atac.lg1x)%>% 
+  pivot_longer(cols=!contains("rownames"), ,values_to = "pk_counts", names_to = "celltype") %>% 
+  mutate(pk_count_sum= sum(pk_counts)) %>% 
+  mutate(cv=sd(pk_counts) / mean(pk_counts)) %>% 
+  group_by(celltype) %>% 
+  mutate(pk_count_sum_celltype= sum(pk_counts)) %>% 
+  mutate(cv_celltype=sd(pk_counts) / mean(pk_counts)) %>% 
+  mutate(all="all celltypes")-> df_psd.bulk.zfish_atac.lg1x
+
+df_psd.bulk.zfish_atac.lg1x
+```
+
+```{r eval=FALSE}
+df_pk_mtrx= as_tibble(zfish_snATAC_seq_pk_mtrx, rownames="rownames")
+df_pk_mtrx %>% pivot_longer(cols=!contains("rownames"), values_to = "pk_counts", names_to = "id") -> df_pk_mtrx.l
+df_pk_mtrx.l
+```
+
+
+
+# 3 Plotting
+
+## 3.1 all cells counts as a histogram 
+
+This is not possible with all cells.
+
+```{r eval=FALSE}
+df_pk_mtrx.l %>% 
+  ggplot(aes(x=pk_counts))+geom_histogram(binwidth = 0.7, color="gray15", alpha=0.8)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none")
+```
+
+
+
+
+## 3.2 Distribution After pseudo-bulking by celltype
+
+```{r}
+df_psd.bulk.zfish_atac.lg1x %>% 
+  ungroup() %>% 
+ ggplot(aes(x=pk_counts))+geom_histogram(binwidth = 0.2, color="gray15", alpha=0.8)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") 
+```
+
+
+
+```{r}
+df_psd.bulk.zfish_atac.lg1x %>% 
+ ggplot(aes(x=pk_counts))+geom_histogram(binwidth = 0.2, color="gray15", alpha=0.8)+
+ scale_y_continuous(breaks = scales::breaks_pretty(n=10))+
+  coord_fixed(ratio = 0.00001)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") ->dis.counts.1
+
+ ggplot(df_psd.bulk.zfish_atac.lg1x, aes(x=pk_counts, fill = celltype))+
+  geom_histogram(binwidth = 0.2, color="gray15", alpha=0.8)+
+  scale_y_continuous(breaks = scales::breaks_pretty(n=10))+
+  facet_wrap(facets = "celltype")+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") ->dis.counts.cell.1
+
+dis.counts.cell.1
+```
+
+```{r}
+dis.counts.1|dis.counts.cell.1
+```
+
+
+
+## 3.3 Sum of all peaks
+
+```{r}
+unique(df_psd.bulk.zfish_atac.lg1x$pk_count_sum)
+```
+
+
+```{r}
+
+df_psd.bulk.zfish_atac.lg1x %>% 
+  ungroup() %>% 
+  distinct(all, pk_count_sum) %>% 
+  ggplot(aes(x=all, y=pk_count_sum))+
+  geom_col(alpha=0.8, color="gray10")+
+  coord_fixed(ratio = 0.0000005)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> sum.peaks.all.1
+
+
+df_psd.bulk.zfish_atac.lg1x %>% 
+  group_by(celltype) %>% 
+  distinct(pk_count_sum_celltype, pk_count_sum) %>% 
+  ggplot(aes(x=celltype, y=pk_count_sum_celltype, fill=celltype))+
+  geom_col(alpha=0.8, color="gray10")+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> sum.peaks.celltype.1
+
+sum.peaks.all.1|sum.peaks.celltype.1
+```
+
+
+## 3.4 Coefficient of Variation 
+
+
+```{r}
+df_psd.bulk.zfish_atac.lg1x %>% 
+  ungroup() %>% 
+  distinct(all, cv) %>% 
+  ggplot(aes(x=all, y=cv ))+
+  geom_col(alpha=0.8, color="gray10")+
+  scale_y_continuous(n.breaks=10)+
+  coord_fixed(ratio = 15)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> cv.all.1
+
+df_psd.bulk.zfish_atac.lg1x %>% 
+  group_by(celltype) %>% 
+  distinct(cv_celltype, cv) %>% 
+  ggplot(aes(x=celltype, y=cv_celltype, fill=celltype))+
+  geom_col(alpha=0.8, color="gray10")+
+  scale_y_continuous(n.breaks=10)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") ->cv.celltype.1
+
+cv.all.1|cv.celltype.1
+```
+
+
+## 3.5 Count Distribution by cell type
+
+```{r}
+df_psd.bulk.zfish_atac.lg1x %>% 
+  mutate(all="all") %>% 
+ ggplot( aes( x=all, y=pk_counts))+
+  geom_violin(color="grey20", alpha=0.3, fill="gray30", trim=F)+
+  coord_fixed(ratio = 0.5)+
+  theme_bw()+ theme(text = element_text(size = 4, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> v.plot.all.1
+
+
+ ggplot(df_psd.bulk.zfish_atac.lg1x, aes(x=celltype, y=pk_counts, fill = celltype))+
+  geom_violin(color="grey20", alpha=0.3, trim=F)+
+   coord_equal(ratio = 0.8)+
+  theme_bw()+ theme(text = element_text(size = 4, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> v.plot.cells.1
+ 
+ v.plot.cells.1
+```
+
+side by side
+```{r}
+v.plot.all.1|v.plot.cells.1
+```
+
+
+The data is hardly visible so I made the following adjustments: boxplot and scale limits set to 0 and 0.1
+
+The resulting plot can be seen down below. 
+```{r}
+df_psd.bulk.zfish_atac.lg1x %>% 
+  mutate(all="all") %>% 
+ ggplot( aes( x=all, y=pk_counts))+
+  geom_violin(color="grey20", alpha=0.3, fill="gray30", trim=F)+
+  geom_boxplot(width = 0.07)+
+  stat_boxplot(geom ='errorbar', width=0.2, position=position_dodge(0.5))+
+  scale_y_continuous(breaks = breaks_pretty(n=20))+
+  coord_fixed(ratio = 0.8)+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> v.plot.all.box.1
+
+
+ ggplot(df_psd.bulk.zfish_atac.lg1x, aes(x=celltype, y=pk_counts, fill = celltype))+
+  geom_violin(color="grey20", alpha=0.3, trim=F)+
+   geom_boxplot(width = 0.07)+
+  stat_boxplot(geom ='errorbar', width=0.2, position=position_dodge(0.5))+
+   scale_y_continuous(breaks = breaks_pretty(n=20))+
+  # coord_equal(ratio = 20)+
+   #facet_wrap(facets=vars(celltype), scales="free_x")+
+  theme_bw()+ theme(text = element_text(size = 9, family="sans", color="black"), #stylisation
+        axis.text = element_text(size=9, color="black"),
+        #axis.text.x = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title=element_text(size=9, face = "bold"),
+        plot.subtitle=element_text(size=10.5),
+        plot.title=element_text(size=11, face = "bold"), 
+        legend.position ="none") -> v.plot.cells.box.1
+ 
+ v.plot.all.box.1|v.plot.cells.box.1
+```
+
+```{r}
+v.plot.cells.box.1
+```
+
+
