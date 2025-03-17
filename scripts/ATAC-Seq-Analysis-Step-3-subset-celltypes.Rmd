@@ -31,8 +31,8 @@ library(Signac) #for atac seq data
 
 First I loaded the ATAC-seq data sets from [this paper](https://www.nature.com/articles/s41597-023-02373-y). 
 ```{r}
-readRDS("../data/Cell-type_Peak_Matrix.rds") -> zfish_snATAC_seq_pk_mtrx #count matrix
-read_delim("../data/atac_all.metaData.txt", delim = ",",
+readRDS("../../data/Cell-type_Peak_Matrix.rds") -> zfish_snATAC_seq_pk_mtrx #count matrix
+read_delim("../../data/atac_all.metaData.txt", delim = ",",
            col_names = TRUE,  
            show_col_types = FALSE)-> zfish_mta_data # meta data
 ```
@@ -187,13 +187,28 @@ psd.bulk.zfish_atac.10hpf=log(psd.bulk.zfish_atac.10hpf$atac+1)
 
 psd.bulk.zfish_atac.10hpf[1:10,1:5]
 ```
+#subsetting chromosone names
+```{r}
+rownames(zfish_snATAC_seq_pk_mtrx.10hpf)-> chromosomes.10hpf
+```
 
-# Saving as CSV file
+#extracting peaknames based on cells of interest
+```{r}
+tibble(chromosomes.10hpf)%>% 
+  separate_wider_delim(chromosomes.10hpf, delim=":", names=c("seqnames", "range")) %>% 
+  separate_wider_delim(range, delim="-", names = c("start", "end")) %>% 
+  makeGRangesFromDataFrame() -> chromosomes.10hpf.gr
+```
+# Exporting to BED and CSV file
 
 ```{r eval=FALSE}
+
+# export as BED file
+rtracklayer::export(chromosomes.10hpf.gr, "../../data/chromosomes.10hpf.bed", format = "BED") #bioconductor package
+
 #save as file
 psd.bulk.zfish_atac.10hpf_df <- as.data.frame(psd.bulk.zfish_atac.10hpf)
-write_csv(psd.bulk.zfish_atac.10hpf_df, "../data/psd.bulk.zfish_atac.10hpf.lg1x.csv")
+write_csv(psd.bulk.zfish_atac.10hpf_df, "../../data/psd.bulk.zfish_atac.10hpf.lg1x.csv")
 ```
 
 # Session Info 
