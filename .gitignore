@@ -4,3 +4,14 @@ data/atac_all.metaData.txt
 data/Cell-type_Peak_Matrix.rds
 data/psd.bulk.zfish_atac.10hpf.lg1x.csv
 papers/
+docs/gReLU_tutorials/
+docs/gReLU
+notebooks/gReLU_practice.ipynb
+data/normalized_peaks.csv
+notebooks/.ipynb_checkpoints/
+notebooks/__pycache__/
+notebooks/lightning_logs/
+notebooks/matrix.tsv.gz
+notebooks/peaks_matrix.mtx
+notebooks/single_task_1/
+notebooks/multi_task_1/
