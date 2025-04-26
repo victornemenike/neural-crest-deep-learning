@@ -26,6 +26,26 @@ def get_captum_integrated_gradients(
         **kwargs,
     ) -> np.array:
 
+    r"""
+        Args:
+
+            forward_func (Callable): The forward function of the model or any
+                    modification of it
+            multiply_by_inputs (bool, optional): Indicates whether to factor
+                    model inputs' multiplier in the final attribution scores.
+                    In the literature this is also known as local vs global
+                    attribution. If inputs' multiplier isn't factored in,
+                    then that type of attribution method is also called local
+                    attribution. If it is, then that type of attribution
+                    method is called global.
+                    More detailed can be found here:
+                    https://arxiv.org/abs/1711.06104
+
+                    In case of integrated gradients, if `multiply_by_inputs`
+                    is set to True, final sensitivity scores are being multiplied by
+                    (inputs - baselines).
+        """
+
     # One-hot encode the input
     seqs = convert_input_type(seqs, "one_hot", genome=genome, add_batch_axis=True)
 
