@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 import torch
 from captum.attr import InputXGradient, IntegratedGradients, Saliency
 from grelu.sequence.format import convert_input_type
