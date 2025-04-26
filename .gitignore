@@ -15,4 +15,5 @@ notebooks/matrix.tsv.gz
 notebooks/peaks_matrix.mtx
 notebooks/single_task_1/
 notebooks/multi_task_1/
+notebooks/multi_task_DilatedConvModel/
 results/archive
