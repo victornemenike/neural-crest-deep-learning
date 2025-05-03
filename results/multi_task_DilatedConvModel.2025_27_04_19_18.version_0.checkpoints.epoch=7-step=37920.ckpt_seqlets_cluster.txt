@@ -1,0 +1,1286 @@
+49455_anterior/posterior axis_170-174 2
+49455_anterior/posterior axis_194-204 12
+49455_anterior/posterior axis_216-221 7
+49455_anterior/posterior axis_227-233 12
+49455_anterior/posterior axis_329-334 12
+49459_anterior/posterior axis_206-213 7
+49484_anterior/posterior axis_475-480 27
+49520_anterior/posterior axis_225-230 8
+49520_anterior/posterior axis_244-249 14
+49520_anterior/posterior axis_321-325 26
+49549_anterior/posterior axis_317-324 11
+49577_anterior/posterior axis_255-259 27
+49577_anterior/posterior axis_261-266 1
+49579_anterior/posterior axis_197-207 12
+49579_anterior/posterior axis_237-242 12
+49579_anterior/posterior axis_273-280 19
+50351_anterior/posterior axis_5-10 3
+50351_anterior/posterior axis_243-247 14
+50455_anterior/posterior axis_172-176 19
+50455_anterior/posterior axis_330-335 19
+50816_anterior/posterior axis_272-286 16
+50816_anterior/posterior axis_299-304 16
+51334_anterior/posterior axis_174-180 18
+51334_anterior/posterior axis_237-243 18
+51334_anterior/posterior axis_287-291 9
+51620_anterior/posterior axis_360-366 4
+51620_anterior/posterior axis_386-391 28
+51872_anterior/posterior axis_256-260 23
+51872_anterior/posterior axis_271-276 11
+51872_anterior/posterior axis_277-282 24
+51872_anterior/posterior axis_284-290 23
+51872_anterior/posterior axis_307-313 5
+52075_anterior/posterior axis_324-333 6
+52075_anterior/posterior axis_335-340 12
+52075_anterior/posterior axis_342-349 25
+52178_anterior/posterior axis_162-166 14
+52178_anterior/posterior axis_271-283 18
+52178_anterior/posterior axis_308-313 12
+52178_anterior/posterior axis_402-406 3
+52659_anterior/posterior axis_175-183 15
+52659_anterior/posterior axis_209-215 22
+52696_anterior/posterior axis_178-182 5
+52696_anterior/posterior axis_244-250 5
+52696_anterior/posterior axis_354-359 5
+52937_anterior/posterior axis_261-270 18
+53150_anterior/posterior axis_172-179 12
+53150_anterior/posterior axis_228-233 18
+53175_anterior/posterior axis_191-195 27
+53175_anterior/posterior axis_198-204 5
+53175_anterior/posterior axis_224-234 6
+53386_anterior/posterior axis_217-224 18
+53386_anterior/posterior axis_299-310 3
+53805_anterior/posterior axis_411-422 29
+53805_anterior/posterior axis_455-461 29
+53899_anterior/posterior axis_344-354 29
+54169_anterior/posterior axis_224-232 11
+54169_anterior/posterior axis_249-254 5
+54169_anterior/posterior axis_297-305 5
+55357_anterior/posterior axis_244-249 26
+55733_anterior/posterior axis_271-275 23
+55733_anterior/posterior axis_276-283 13
+55733_anterior/posterior axis_285-292 20
+55733_anterior/posterior axis_325-331 5
+56229_anterior/posterior axis_205-211 19
+56229_anterior/posterior axis_222-226 11
+56229_anterior/posterior axis_264-269 5
+56229_anterior/posterior axis_284-288 23
+56782_anterior/posterior axis_194-202 5
+56782_anterior/posterior axis_247-253 29
+56782_anterior/posterior axis_274-280 18
+56782_anterior/posterior axis_289-293 5
+58344_anterior/posterior axis_205-210 11
+58344_anterior/posterior axis_224-234 11
+59233_anterior/posterior axis_160-170 12
+59233_anterior/posterior axis_173-178 0
+59233_anterior/posterior axis_194-199 18
+59233_anterior/posterior axis_296-300 27
+61678_anterior/posterior axis_243-249 12
+61678_anterior/posterior axis_377-382 4
+61715_anterior/posterior axis_196-200 10
+61715_anterior/posterior axis_326-335 7
+62189_anterior/posterior axis_147-152 5
+62189_anterior/posterior axis_228-237 15
+62189_anterior/posterior axis_248-253 12
+62189_anterior/posterior axis_253-259 21
+62189_anterior/posterior axis_277-281 6
+62189_anterior/posterior axis_289-302 12
+62759_anterior/posterior axis_485-490 3
+49455_central nervous system_153-159 14
+49455_central nervous system_169-174 2
+49455_central nervous system_194-204 12
+49455_central nervous system_216-221 7
+49455_central nervous system_227-233 12
+49455_central nervous system_329-334 12
+49459_central nervous system_206-221 7
+49466_central nervous system_358-376 16
+49480_central nervous system_175-188 2
+49484_central nervous system_463-470 29
+49484_central nervous system_470-475 4
+49484_central nervous system_475-480 27
+49520_central nervous system_225-230 8
+49520_central nervous system_244-249 14
+49520_central nervous system_283-289 3
+49520_central nervous system_321-325 26
+49549_central nervous system_317-324 11
+49577_central nervous system_255-259 27
+49579_central nervous system_197-207 12
+49579_central nervous system_237-242 12
+49579_central nervous system_273-280 19
+50351_central nervous system_5-13 3
+50351_central nervous system_243-247 14
+50455_central nervous system_172-176 19
+50455_central nervous system_196-201 5
+50455_central nervous system_330-335 19
+50455_central nervous system_375-379 25
+50455_central nervous system_380-385 16
+50816_central nervous system_270-287 16
+50816_central nervous system_299-304 16
+50816_central nervous system_312-317 0
+51334_central nervous system_174-180 18
+51334_central nervous system_236-243 18
+51334_central nervous system_268-273 6
+51334_central nervous system_287-291 9
+51620_central nervous system_360-366 4
+51620_central nervous system_386-392 28
+51872_central nervous system_256-260 23
+51872_central nervous system_267-276 5
+51872_central nervous system_277-282 24
+51872_central nervous system_284-290 23
+51872_central nervous system_307-313 5
+52075_central nervous system_276-281 14
+52075_central nervous system_316-320 20
+52075_central nervous system_324-333 6
+52075_central nervous system_335-340 12
+52075_central nervous system_342-349 25
+52178_central nervous system_162-166 14
+52178_central nervous system_271-283 18
+52178_central nervous system_308-313 12
+52659_central nervous system_209-215 22
+52696_central nervous system_178-182 5
+52696_central nervous system_244-250 5
+52696_central nervous system_350-363 5
+52937_central nervous system_261-270 18
+53150_central nervous system_172-179 12
+53150_central nervous system_228-233 18
+53175_central nervous system_191-195 27
+53175_central nervous system_198-204 5
+53175_central nervous system_224-234 6
+53175_central nervous system_374-380 10
+53386_central nervous system_200-204 14
+53386_central nervous system_217-224 18
+53386_central nervous system_299-310 3
+53805_central nervous system_333-344 29
+53805_central nervous system_377-383 29
+53805_central nervous system_411-422 29
+53805_central nervous system_450-461 29
+53899_central nervous system_344-354 29
+53899_central nervous system_385-394 29
+53899_central nervous system_424-433 29
+53899_central nervous system_466-471 29
+54169_central nervous system_224-232 11
+54169_central nervous system_249-254 5
+54169_central nervous system_297-305 5
+55357_central nervous system_244-249 26
+55733_central nervous system_276-283 13
+55733_central nervous system_285-292 20
+55733_central nervous system_325-331 5
+56229_central nervous system_181-186 16
+56229_central nervous system_205-211 19
+56229_central nervous system_222-228 16
+56229_central nervous system_264-269 5
+56229_central nervous system_389-394 16
+56782_central nervous system_194-202 5
+56782_central nervous system_247-253 29
+56782_central nervous system_274-280 18
+56782_central nervous system_289-293 5
+56834_central nervous system_143-149 2
+56834_central nervous system_177-182 17
+58344_central nervous system_205-210 11
+58344_central nervous system_210-214 9
+58344_central nervous system_224-234 11
+59233_central nervous system_160-170 12
+59233_central nervous system_173-178 0
+59233_central nervous system_194-199 18
+59233_central nervous system_296-300 27
+61678_central nervous system_243-249 12
+61678_central nervous system_377-382 4
+61715_central nervous system_196-200 10
+61715_central nervous system_326-341 7
+62189_central nervous system_147-152 5
+62189_central nervous system_228-237 15
+62189_central nervous system_248-253 12
+62189_central nervous system_253-259 21
+62189_central nervous system_277-282 6
+62189_central nervous system_289-302 12
+62759_central nervous system_485-490 3
+49455_forebrain_169-174 2
+49455_forebrain_194-204 12
+49455_forebrain_216-221 7
+49455_forebrain_227-233 12
+49455_forebrain_329-334 12
+49459_forebrain_206-221 7
+49480_forebrain_181-188 7
+49484_forebrain_463-470 29
+49484_forebrain_475-480 27
+49520_forebrain_217-221 18
+49520_forebrain_225-230 8
+49520_forebrain_244-249 14
+49520_forebrain_321-325 26
+49549_forebrain_189-194 12
+49549_forebrain_317-326 11
+49579_forebrain_197-207 12
+49579_forebrain_237-242 12
+49579_forebrain_273-280 19
+50351_forebrain_5-13 3
+50351_forebrain_243-247 14
+50351_forebrain_284-288 14
+50455_forebrain_172-177 19
+50455_forebrain_196-201 5
+50455_forebrain_232-236 19
+50455_forebrain_330-335 19
+50816_forebrain_272-287 16
+50816_forebrain_299-303 16
+51334_forebrain_175-180 18
+51334_forebrain_237-243 18
+51334_forebrain_280-285 18
+51334_forebrain_287-291 9
+51620_forebrain_360-366 4
+51872_forebrain_256-260 23
+51872_forebrain_271-276 11
+51872_forebrain_276-282 24
+51872_forebrain_284-290 23
+51872_forebrain_307-313 5
+52075_forebrain_324-333 6
+52075_forebrain_335-340 12
+52075_forebrain_342-349 25
+52178_forebrain_162-166 14
+52178_forebrain_271-283 18
+52178_forebrain_308-313 12
+52659_forebrain_175-185 15
+52659_forebrain_222-226 23
+52696_forebrain_177-182 5
+52696_forebrain_244-250 5
+52696_forebrain_350-363 5
+52937_forebrain_261-270 18
+53150_forebrain_172-179 12
+53150_forebrain_228-233 18
+53175_forebrain_191-195 27
+53175_forebrain_198-204 5
+53175_forebrain_224-234 6
+53386_forebrain_200-204 14
+53386_forebrain_217-224 18
+53386_forebrain_299-308 3
+53805_forebrain_333-344 29
+53805_forebrain_377-383 29
+53805_forebrain_411-422 29
+53805_forebrain_455-461 29
+53899_forebrain_344-354 29
+53899_forebrain_385-394 29
+53899_forebrain_424-433 29
+54169_forebrain_224-232 11
+54169_forebrain_249-254 5
+54169_forebrain_297-305 5
+55733_forebrain_269-275 19
+55733_forebrain_276-283 13
+55733_forebrain_285-292 20
+55733_forebrain_325-331 5
+56229_forebrain_205-211 19
+56229_forebrain_222-228 11
+56229_forebrain_264-269 5
+56229_forebrain_284-288 23
+56229_forebrain_358-365 26
+56229_forebrain_389-394 16
+56782_forebrain_190-202 5
+56782_forebrain_229-235 21
+56782_forebrain_275-280 18
+56782_forebrain_286-293 5
+56834_forebrain_137-149 2
+56834_forebrain_177-182 17
+58344_forebrain_205-210 11
+58344_forebrain_224-234 11
+59233_forebrain_160-170 12
+59233_forebrain_173-178 0
+59233_forebrain_194-199 18
+59233_forebrain_296-300 27
+61678_forebrain_243-249 12
+61678_forebrain_377-382 4
+61715_forebrain_196-200 10
+61715_forebrain_328-339 7
+62189_forebrain_147-152 5
+62189_forebrain_228-233 15
+62189_forebrain_248-253 12
+62189_forebrain_277-281 6
+62189_forebrain_292-302 12
+62759_forebrain_485-490 3
+49455_immature eye_169-174 2
+49455_immature eye_194-204 12
+49455_immature eye_216-221 7
+49455_immature eye_227-233 12
+49455_immature eye_329-334 12
+49459_immature eye_206-221 7
+49466_immature eye_364-376 16
+49480_immature eye_175-188 2
+49484_immature eye_463-470 29
+49484_immature eye_475-480 27
+49520_immature eye_225-230 8
+49520_immature eye_244-249 14
+49520_immature eye_284-289 3
+49520_immature eye_321-325 26
+49549_immature eye_317-326 11
+49577_immature eye_255-259 27
+49577_immature eye_261-266 1
+49579_immature eye_197-207 12
+49579_immature eye_237-242 12
+50351_immature eye_5-13 3
+50351_immature eye_243-247 14
+50351_immature eye_284-288 14
+50455_immature eye_172-176 19
+50455_immature eye_196-201 5
+50455_immature eye_330-334 19
+50455_immature eye_380-385 16
+50816_immature eye_270-287 16
+50816_immature eye_299-304 16
+51334_immature eye_175-180 18
+51334_immature eye_236-243 18
+51334_immature eye_287-291 9
+51620_immature eye_360-366 4
+51620_immature eye_386-391 28
+51872_immature eye_256-260 23
+51872_immature eye_267-276 5
+51872_immature eye_277-283 24
+51872_immature eye_284-290 23
+51872_immature eye_307-313 5
+52075_immature eye_324-340 6
+52075_immature eye_342-349 25
+52178_immature eye_162-166 14
+52178_immature eye_271-283 18
+52178_immature eye_308-313 12
+52659_immature eye_175-183 15
+52659_immature eye_209-215 22
+52696_immature eye_178-182 5
+52696_immature eye_244-250 5
+52696_immature eye_350-363 5
+52937_immature eye_261-270 18
+53150_immature eye_172-179 12
+53150_immature eye_228-235 18
+53175_immature eye_191-195 27
+53175_immature eye_198-204 5
+53175_immature eye_224-234 6
+53175_immature eye_374-380 10
+53386_immature eye_200-204 14
+53386_immature eye_217-224 18
+53386_immature eye_299-310 3
+53805_immature eye_333-344 29
+53805_immature eye_377-383 29
+53805_immature eye_411-422 29
+53805_immature eye_455-461 29
+53899_immature eye_344-354 29
+53899_immature eye_385-394 29
+53899_immature eye_424-433 29
+54169_immature eye_224-232 11
+54169_immature eye_248-254 5
+54169_immature eye_297-305 5
+55733_immature eye_285-292 20
+55733_immature eye_325-331 5
+56229_immature eye_205-211 19
+56229_immature eye_222-228 16
+56229_immature eye_264-269 5
+56229_immature eye_389-394 16
+56782_immature eye_190-202 5
+56782_immature eye_247-253 29
+56782_immature eye_274-280 18
+56782_immature eye_289-293 5
+56834_immature eye_141-149 2
+56834_immature eye_177-182 17
+58344_immature eye_205-210 11
+58344_immature eye_224-234 11
+59233_immature eye_160-170 12
+59233_immature eye_173-178 0
+59233_immature eye_194-199 18
+59233_immature eye_296-300 27
+61678_immature eye_243-249 12
+61678_immature eye_377-382 4
+61715_immature eye_196-200 10
+61715_immature eye_328-341 7
+62189_immature eye_147-152 5
+62189_immature eye_228-233 15
+62189_immature eye_248-253 12
+62189_immature eye_253-259 21
+62189_immature eye_277-281 6
+62189_immature eye_289-302 12
+62759_immature eye_485-490 3
+49455_integument_194-204 12
+49455_integument_216-221 7
+49455_integument_227-233 12
+49455_integument_329-334 12
+49459_integument_206-221 7
+49466_integument_364-376 16
+49466_integument_378-384 16
+49480_integument_175-188 2
+49484_integument_463-470 29
+49484_integument_475-480 27
+49520_integument_225-230 8
+49520_integument_284-289 3
+49520_integument_321-325 26
+49549_integument_317-324 11
+49577_integument_255-259 27
+49577_integument_261-267 1
+49579_integument_197-207 12
+49579_integument_237-242 12
+50351_integument_5-10 3
+50351_integument_243-247 14
+50455_integument_380-385 16
+50816_integument_270-287 16
+50816_integument_299-304 16
+51334_integument_236-243 18
+51334_integument_287-291 9
+51620_integument_360-366 4
+51620_integument_386-391 28
+51872_integument_267-276 5
+52075_integument_316-320 20
+52075_integument_324-333 6
+52075_integument_335-340 12
+52075_integument_342-349 25
+52178_integument_162-166 14
+52178_integument_278-283 2
+52696_integument_354-359 5
+52937_integument_261-270 18
+53150_integument_172-179 12
+53150_integument_228-233 18
+53175_integument_191-195 27
+53175_integument_198-204 5
+53175_integument_224-234 6
+53175_integument_236-241 1
+53175_integument_374-380 10
+53386_integument_200-204 14
+53386_integument_217-224 18
+53386_integument_299-310 3
+53805_integument_338-344 29
+53805_integument_377-383 29
+53805_integument_411-422 29
+53805_integument_455-461 29
+53899_integument_344-354 29
+53899_integument_388-394 29
+53899_integument_424-433 29
+56229_integument_222-228 16
+56229_integument_389-394 16
+56782_integument_247-253 29
+56782_integument_274-280 18
+56834_integument_143-149 2
+56834_integument_177-182 17
+58344_integument_205-210 11
+58344_integument_210-214 9
+58344_integument_224-234 11
+59233_integument_160-170 12
+59233_integument_173-178 0
+59233_integument_194-199 18
+59233_integument_296-300 27
+61678_integument_228-232 8
+61678_integument_243-249 12
+61678_integument_377-382 4
+61715_integument_194-200 10
+61715_integument_328-339 7
+62189_integument_248-253 12
+62189_integument_277-282 6
+62189_integument_289-302 12
+62759_integument_213-217 16
+62759_integument_485-490 3
+49455_lateral plate mesoderm_153-159 14
+49455_lateral plate mesoderm_170-174 2
+49455_lateral plate mesoderm_194-204 12
+49455_lateral plate mesoderm_216-221 7
+49455_lateral plate mesoderm_227-233 12
+49455_lateral plate mesoderm_329-334 12
+49459_lateral plate mesoderm_206-213 7
+49484_lateral plate mesoderm_475-480 27
+49520_lateral plate mesoderm_217-221 18
+49520_lateral plate mesoderm_225-230 8
+49520_lateral plate mesoderm_244-249 14
+49520_lateral plate mesoderm_283-289 3
+49520_lateral plate mesoderm_321-325 26
+49549_lateral plate mesoderm_317-324 11
+49577_lateral plate mesoderm_255-259 27
+49577_lateral plate mesoderm_261-266 1
+49579_lateral plate mesoderm_197-207 12
+49579_lateral plate mesoderm_237-242 12
+50351_lateral plate mesoderm_5-10 3
+50351_lateral plate mesoderm_243-247 14
+50455_lateral plate mesoderm_196-200 5
+50816_lateral plate mesoderm_272-286 16
+50816_lateral plate mesoderm_299-304 16
+51334_lateral plate mesoderm_175-180 18
+51334_lateral plate mesoderm_236-243 18
+51334_lateral plate mesoderm_287-291 9
+51620_lateral plate mesoderm_360-366 4
+51620_lateral plate mesoderm_386-391 28
+51872_lateral plate mesoderm_271-276 11
+51872_lateral plate mesoderm_307-313 5
+52075_lateral plate mesoderm_324-340 6
+52075_lateral plate mesoderm_342-349 25
+52178_lateral plate mesoderm_162-166 14
+52178_lateral plate mesoderm_278-283 2
+52178_lateral plate mesoderm_308-313 12
+52178_lateral plate mesoderm_402-406 3
+52696_lateral plate mesoderm_178-182 5
+52696_lateral plate mesoderm_244-250 5
+52696_lateral plate mesoderm_354-363 5
+52937_lateral plate mesoderm_261-270 18
+53150_lateral plate mesoderm_172-179 12
+53150_lateral plate mesoderm_228-235 18
+53175_lateral plate mesoderm_191-195 27
+53175_lateral plate mesoderm_198-204 5
+53175_lateral plate mesoderm_224-234 6
+53386_lateral plate mesoderm_200-204 14
+53386_lateral plate mesoderm_217-224 18
+53386_lateral plate mesoderm_299-310 3
+53805_lateral plate mesoderm_377-383 29
+53805_lateral plate mesoderm_411-422 29
+53805_lateral plate mesoderm_455-461 29
+53899_lateral plate mesoderm_344-354 29
+54169_lateral plate mesoderm_224-232 11
+54169_lateral plate mesoderm_249-254 5
+54169_lateral plate mesoderm_299-305 5
+55357_lateral plate mesoderm_244-249 26
+55733_lateral plate mesoderm_287-292 20
+55733_lateral plate mesoderm_325-331 5
+56229_lateral plate mesoderm_222-226 11
+56229_lateral plate mesoderm_264-269 5
+56782_lateral plate mesoderm_194-202 5
+56782_lateral plate mesoderm_247-253 29
+56782_lateral plate mesoderm_274-280 18
+56782_lateral plate mesoderm_289-293 5
+56834_lateral plate mesoderm_177-182 17
+58344_lateral plate mesoderm_205-210 11
+58344_lateral plate mesoderm_210-214 9
+58344_lateral plate mesoderm_224-234 11
+59233_lateral plate mesoderm_160-170 12
+59233_lateral plate mesoderm_173-178 0
+59233_lateral plate mesoderm_194-200 18
+59233_lateral plate mesoderm_296-300 27
+61678_lateral plate mesoderm_243-249 12
+61678_lateral plate mesoderm_377-382 4
+61715_lateral plate mesoderm_196-200 10
+61715_lateral plate mesoderm_326-335 7
+62189_lateral plate mesoderm_147-152 5
+62189_lateral plate mesoderm_228-233 15
+62189_lateral plate mesoderm_248-253 12
+62189_lateral plate mesoderm_253-259 21
+62189_lateral plate mesoderm_277-282 6
+62189_lateral plate mesoderm_289-302 12
+62759_lateral plate mesoderm_485-490 3
+49455_mesenchyme cell_170-174 2
+49455_mesenchyme cell_194-204 12
+49455_mesenchyme cell_216-221 7
+49455_mesenchyme cell_227-233 12
+49455_mesenchyme cell_329-334 12
+49459_mesenchyme cell_206-221 7
+49466_mesenchyme cell_364-376 16
+49466_mesenchyme cell_378-384 16
+49480_mesenchyme cell_175-188 2
+49484_mesenchyme cell_463-470 29
+49484_mesenchyme cell_475-480 27
+49520_mesenchyme cell_225-230 8
+49520_mesenchyme cell_244-249 14
+49520_mesenchyme cell_283-289 3
+49520_mesenchyme cell_321-325 26
+49549_mesenchyme cell_317-324 11
+49577_mesenchyme cell_255-259 27
+49577_mesenchyme cell_261-267 1
+49579_mesenchyme cell_197-207 12
+49579_mesenchyme cell_237-242 12
+50351_mesenchyme cell_5-13 3
+50351_mesenchyme cell_243-247 14
+50455_mesenchyme cell_196-200 5
+50455_mesenchyme cell_380-386 16
+50455_mesenchyme cell_388-393 16
+50816_mesenchyme cell_270-287 16
+50816_mesenchyme cell_298-304 16
+50816_mesenchyme cell_312-317 0
+51334_mesenchyme cell_174-180 18
+51334_mesenchyme cell_236-243 18
+51334_mesenchyme cell_287-291 9
+51620_mesenchyme cell_360-366 4
+51620_mesenchyme cell_386-391 28
+51872_mesenchyme cell_267-276 5
+51872_mesenchyme cell_309-313 5
+52075_mesenchyme cell_316-320 20
+52075_mesenchyme cell_324-340 6
+52075_mesenchyme cell_342-349 25
+52178_mesenchyme cell_162-166 14
+52178_mesenchyme cell_278-283 2
+52178_mesenchyme cell_308-313 12
+52659_mesenchyme cell_211-217 22
+52696_mesenchyme cell_244-250 5
+52696_mesenchyme cell_350-363 5
+52937_mesenchyme cell_261-270 18
+53150_mesenchyme cell_172-179 12
+53150_mesenchyme cell_228-233 18
+53175_mesenchyme cell_191-195 27
+53175_mesenchyme cell_198-204 5
+53175_mesenchyme cell_224-234 6
+53386_mesenchyme cell_200-204 14
+53386_mesenchyme cell_217-224 18
+53386_mesenchyme cell_299-310 3
+53805_mesenchyme cell_333-344 29
+53805_mesenchyme cell_377-383 29
+53805_mesenchyme cell_411-422 29
+53805_mesenchyme cell_455-461 29
+53899_mesenchyme cell_344-354 29
+53899_mesenchyme cell_385-394 29
+53899_mesenchyme cell_424-433 29
+53899_mesenchyme cell_466-471 29
+54169_mesenchyme cell_224-230 11
+54169_mesenchyme cell_249-254 5
+55357_mesenchyme cell_244-249 26
+55733_mesenchyme cell_325-331 5
+56229_mesenchyme cell_181-186 16
+56229_mesenchyme cell_222-228 16
+56229_mesenchyme cell_264-269 5
+56229_mesenchyme cell_389-395 16
+56782_mesenchyme cell_194-202 5
+56782_mesenchyme cell_247-253 29
+56782_mesenchyme cell_274-280 18
+56782_mesenchyme cell_289-293 5
+56834_mesenchyme cell_143-149 2
+56834_mesenchyme cell_177-182 17
+58344_mesenchyme cell_199-210 5
+58344_mesenchyme cell_210-219 9
+58344_mesenchyme cell_224-234 11
+59233_mesenchyme cell_160-170 12
+59233_mesenchyme cell_173-178 0
+59233_mesenchyme cell_194-200 18
+59233_mesenchyme cell_296-300 27
+61678_mesenchyme cell_243-249 12
+61678_mesenchyme cell_377-382 4
+61715_mesenchyme cell_194-200 10
+61715_mesenchyme cell_326-341 7
+62189_mesenchyme cell_148-152 5
+62189_mesenchyme cell_228-233 15
+62189_mesenchyme cell_248-253 12
+62189_mesenchyme cell_253-259 21
+62189_mesenchyme cell_277-282 6
+62189_mesenchyme cell_289-302 12
+62759_mesenchyme cell_213-217 16
+62759_mesenchyme cell_485-490 3
+49455_musculature system_194-204 12
+49455_musculature system_216-221 7
+49455_musculature system_227-233 12
+49455_musculature system_329-334 12
+49459_musculature system_206-219 7
+49466_musculature system_364-376 16
+49466_musculature system_378-384 16
+49484_musculature system_475-480 27
+49520_musculature system_225-230 8
+49520_musculature system_283-289 3
+49520_musculature system_321-325 26
+49549_musculature system_317-324 11
+49577_musculature system_255-259 27
+49577_musculature system_261-267 1
+49579_musculature system_199-207 12
+49579_musculature system_237-242 12
+50351_musculature system_5-10 3
+50351_musculature system_243-247 14
+50455_musculature system_380-385 16
+50816_musculature system_272-287 16
+50816_musculature system_299-304 16
+51334_musculature system_236-243 18
+51334_musculature system_287-291 9
+51620_musculature system_360-366 4
+51872_musculature system_267-276 5
+52075_musculature system_324-333 6
+52075_musculature system_335-340 12
+52075_musculature system_342-349 25
+52178_musculature system_162-166 14
+52178_musculature system_278-283 2
+52696_musculature system_354-359 5
+52937_musculature system_261-270 18
+53150_musculature system_172-179 12
+53150_musculature system_228-233 18
+53175_musculature system_191-195 27
+53175_musculature system_198-204 5
+53175_musculature system_224-234 6
+53386_musculature system_217-224 18
+53386_musculature system_299-310 3
+53805_musculature system_411-422 29
+53805_musculature system_455-461 29
+55357_musculature system_244-249 26
+56229_musculature system_222-228 16
+56782_musculature system_247-253 29
+56782_musculature system_274-280 18
+56834_musculature system_143-149 2
+56834_musculature system_177-182 17
+58344_musculature system_205-210 11
+58344_musculature system_210-219 9
+58344_musculature system_224-234 11
+59233_musculature system_160-170 12
+59233_musculature system_173-178 0
+59233_musculature system_194-200 18
+59233_musculature system_296-300 27
+61678_musculature system_228-232 8
+61678_musculature system_243-249 12
+61678_musculature system_377-382 4
+61715_musculature system_194-200 10
+61715_musculature system_328-335 7
+62189_musculature system_228-233 15
+62189_musculature system_248-253 12
+62189_musculature system_277-282 6
+62189_musculature system_289-302 12
+62759_musculature system_213-217 16
+62759_musculature system_485-490 3
+49455_neural crest_153-159 14
+49455_neural crest_170-174 2
+49455_neural crest_194-204 12
+49455_neural crest_216-221 7
+49455_neural crest_227-233 12
+49455_neural crest_329-334 12
+49459_neural crest_206-213 7
+49484_neural crest_463-470 29
+49484_neural crest_475-480 27
+49520_neural crest_225-230 8
+49520_neural crest_244-249 14
+49520_neural crest_284-289 3
+49520_neural crest_321-325 26
+49549_neural crest_317-324 11
+49577_neural crest_255-259 27
+49577_neural crest_261-266 1
+49579_neural crest_197-207 12
+49579_neural crest_237-242 12
+50351_neural crest_5-10 3
+50351_neural crest_243-247 14
+50816_neural crest_272-286 16
+50816_neural crest_299-304 16
+51334_neural crest_175-180 18
+51334_neural crest_236-243 18
+51334_neural crest_287-291 9
+51620_neural crest_360-366 4
+51620_neural crest_386-391 28
+51872_neural crest_271-276 11
+51872_neural crest_307-313 5
+52075_neural crest_277-281 14
+52075_neural crest_324-333 6
+52075_neural crest_335-340 12
+52075_neural crest_342-349 25
+52178_neural crest_162-166 14
+52178_neural crest_271-276 18
+52178_neural crest_278-283 2
+52178_neural crest_308-313 12
+52178_neural crest_402-406 3
+52659_neural crest_176-183 15
+52696_neural crest_178-182 5
+52696_neural crest_244-250 5
+52696_neural crest_354-359 5
+52937_neural crest_261-270 18
+53150_neural crest_172-179 12
+53150_neural crest_228-233 18
+53175_neural crest_191-195 27
+53175_neural crest_198-204 5
+53175_neural crest_224-234 6
+53386_neural crest_217-224 18
+53386_neural crest_299-310 3
+53805_neural crest_377-383 29
+53805_neural crest_411-422 29
+53805_neural crest_455-461 29
+53899_neural crest_344-354 29
+53899_neural crest_388-394 29
+54169_neural crest_224-232 11
+54169_neural crest_249-254 5
+54169_neural crest_299-305 5
+55357_neural crest_244-249 26
+55733_neural crest_285-292 20
+55733_neural crest_325-331 5
+56229_neural crest_264-269 5
+56782_neural crest_194-202 5
+56782_neural crest_247-253 29
+56782_neural crest_274-280 18
+56782_neural crest_289-293 5
+56834_neural crest_143-149 2
+56834_neural crest_177-182 17
+58344_neural crest_205-210 11
+58344_neural crest_210-214 9
+58344_neural crest_224-234 11
+59233_neural crest_160-170 12
+59233_neural crest_173-178 0
+59233_neural crest_194-199 18
+59233_neural crest_296-300 27
+61678_neural crest_243-249 12
+61678_neural crest_377-382 4
+61715_neural crest_196-200 10
+61715_neural crest_326-335 7
+62189_neural crest_147-152 5
+62189_neural crest_228-233 15
+62189_neural crest_248-253 12
+62189_neural crest_277-282 6
+62189_neural crest_289-302 12
+62759_neural crest_485-490 3
+49455_neural keel_153-159 14
+49455_neural keel_169-174 2
+49455_neural keel_194-204 12
+49455_neural keel_216-221 7
+49455_neural keel_227-233 12
+49455_neural keel_329-334 12
+49459_neural keel_206-219 7
+49480_neural keel_175-182 2
+49484_neural keel_463-470 29
+49484_neural keel_475-480 27
+49520_neural keel_225-230 8
+49520_neural keel_244-249 14
+49520_neural keel_321-325 26
+49549_neural keel_279-285 12
+49549_neural keel_317-324 11
+49579_neural keel_197-207 12
+49579_neural keel_237-242 12
+49579_neural keel_273-280 19
+50351_neural keel_5-10 3
+50351_neural keel_243-247 14
+50455_neural keel_172-177 19
+50455_neural keel_196-201 5
+50455_neural keel_330-335 19
+50816_neural keel_272-286 16
+50816_neural keel_299-304 16
+51334_neural keel_174-180 18
+51334_neural keel_237-243 18
+51334_neural keel_287-291 9
+51620_neural keel_360-366 4
+51620_neural keel_386-391 28
+51872_neural keel_256-260 23
+51872_neural keel_271-276 11
+51872_neural keel_277-282 24
+51872_neural keel_284-293 23
+51872_neural keel_307-313 5
+52075_neural keel_324-333 6
+52075_neural keel_335-340 12
+52075_neural keel_342-349 25
+52178_neural keel_162-166 14
+52178_neural keel_271-283 18
+52178_neural keel_308-313 12
+52659_neural keel_175-185 15
+52659_neural keel_209-215 22
+52696_neural keel_178-182 5
+52696_neural keel_244-250 5
+52696_neural keel_354-359 5
+52937_neural keel_261-270 18
+53150_neural keel_172-179 12
+53150_neural keel_228-233 18
+53175_neural keel_191-195 27
+53175_neural keel_198-204 5
+53175_neural keel_224-234 6
+53386_neural keel_217-224 18
+53386_neural keel_299-310 3
+53805_neural keel_338-344 29
+53805_neural keel_377-383 29
+53805_neural keel_411-422 29
+53805_neural keel_455-461 29
+53899_neural keel_344-354 29
+53899_neural keel_388-394 29
+53899_neural keel_424-433 29
+54169_neural keel_224-232 11
+54169_neural keel_249-254 5
+54169_neural keel_297-305 5
+55357_neural keel_244-249 26
+55733_neural keel_269-275 19
+55733_neural keel_276-283 13
+55733_neural keel_285-292 20
+55733_neural keel_325-331 5
+56229_neural keel_205-211 19
+56229_neural keel_222-226 11
+56229_neural keel_264-269 5
+56229_neural keel_284-288 23
+56229_neural keel_358-365 26
+56229_neural keel_389-394 16
+56782_neural keel_190-202 5
+56782_neural keel_229-237 21
+56782_neural keel_274-280 18
+56782_neural keel_289-293 5
+56834_neural keel_143-149 2
+58344_neural keel_205-210 11
+58344_neural keel_224-234 11
+59233_neural keel_160-170 12
+59233_neural keel_173-178 0
+59233_neural keel_194-199 18
+59233_neural keel_296-300 27
+61678_neural keel_243-249 12
+61715_neural keel_196-200 10
+61715_neural keel_326-335 7
+62189_neural keel_147-152 5
+62189_neural keel_228-237 15
+62189_neural keel_248-253 12
+62189_neural keel_277-281 6
+62189_neural keel_292-302 12
+62759_neural keel_485-490 3
+49455_neural stem cell_169-174 2
+49455_neural stem cell_194-204 12
+49455_neural stem cell_216-221 7
+49455_neural stem cell_228-233 12
+49455_neural stem cell_329-334 12
+49459_neural stem cell_206-221 7
+49466_neural stem cell_364-376 16
+49480_neural stem cell_175-188 2
+49484_neural stem cell_463-470 29
+49484_neural stem cell_470-475 4
+49484_neural stem cell_475-480 27
+49520_neural stem cell_225-230 8
+49520_neural stem cell_244-249 14
+49520_neural stem cell_321-325 26
+49549_neural stem cell_317-326 11
+49577_neural stem cell_255-259 27
+49577_neural stem cell_261-266 1
+49579_neural stem cell_197-207 12
+49579_neural stem cell_237-242 12
+49579_neural stem cell_273-280 19
+50351_neural stem cell_5-13 3
+50351_neural stem cell_243-247 14
+50351_neural stem cell_284-288 14
+50455_neural stem cell_172-177 19
+50455_neural stem cell_196-201 5
+50455_neural stem cell_330-335 19
+50455_neural stem cell_380-385 16
+50816_neural stem cell_270-287 16
+50816_neural stem cell_299-304 16
+50816_neural stem cell_312-317 0
+51334_neural stem cell_175-180 18
+51334_neural stem cell_236-243 18
+51334_neural stem cell_268-273 6
+51334_neural stem cell_287-291 9
+51620_neural stem cell_360-366 4
+51620_neural stem cell_386-391 28
+51872_neural stem cell_256-260 23
+51872_neural stem cell_267-276 5
+51872_neural stem cell_276-282 24
+51872_neural stem cell_284-290 23
+51872_neural stem cell_307-313 5
+52075_neural stem cell_324-340 6
+52075_neural stem cell_342-349 25
+52178_neural stem cell_162-166 14
+52178_neural stem cell_271-283 18
+52178_neural stem cell_308-313 12
+52659_neural stem cell_175-185 15
+52696_neural stem cell_177-182 5
+52696_neural stem cell_244-250 5
+52696_neural stem cell_350-363 5
+52937_neural stem cell_261-270 18
+53150_neural stem cell_172-179 12
+53150_neural stem cell_228-233 18
+53175_neural stem cell_191-195 27
+53175_neural stem cell_198-204 5
+53175_neural stem cell_224-234 6
+53175_neural stem cell_374-380 10
+53386_neural stem cell_200-204 14
+53386_neural stem cell_217-224 18
+53386_neural stem cell_299-310 3
+53805_neural stem cell_333-344 29
+53805_neural stem cell_377-383 29
+53805_neural stem cell_411-422 29
+53805_neural stem cell_452-461 29
+53899_neural stem cell_344-354 29
+53899_neural stem cell_385-394 29
+53899_neural stem cell_424-433 29
+53899_neural stem cell_466-472 29
+54169_neural stem cell_224-232 11
+54169_neural stem cell_248-254 5
+54169_neural stem cell_297-305 5
+55733_neural stem cell_269-275 19
+55733_neural stem cell_276-283 13
+55733_neural stem cell_285-292 20
+55733_neural stem cell_325-331 5
+56229_neural stem cell_181-186 16
+56229_neural stem cell_205-211 19
+56229_neural stem cell_222-228 16
+56229_neural stem cell_264-269 5
+56229_neural stem cell_284-288 23
+56229_neural stem cell_358-365 26
+56229_neural stem cell_389-394 16
+56782_neural stem cell_190-202 5
+56782_neural stem cell_229-235 21
+56782_neural stem cell_275-280 18
+56782_neural stem cell_289-293 5
+56834_neural stem cell_137-149 2
+56834_neural stem cell_177-182 17
+58344_neural stem cell_205-210 11
+58344_neural stem cell_224-234 11
+59233_neural stem cell_160-170 12
+59233_neural stem cell_173-178 0
+59233_neural stem cell_194-199 18
+59233_neural stem cell_296-300 27
+61678_neural stem cell_243-249 12
+61678_neural stem cell_377-382 4
+61715_neural stem cell_196-200 10
+61715_neural stem cell_328-341 7
+62189_neural stem cell_147-152 5
+62189_neural stem cell_248-253 12
+62189_neural stem cell_277-281 6
+62189_neural stem cell_292-302 12
+62759_neural stem cell_485-490 3
+49455_periderm/epidermis_194-204 12
+49455_periderm/epidermis_216-221 7
+49455_periderm/epidermis_227-233 12
+49455_periderm/epidermis_329-334 12
+49459_periderm/epidermis_206-213 7
+49484_periderm/epidermis_475-480 27
+49520_periderm/epidermis_217-221 18
+49520_periderm/epidermis_225-230 8
+49520_periderm/epidermis_284-289 3
+49577_periderm/epidermis_255-259 27
+49577_periderm/epidermis_261-267 1
+49579_periderm/epidermis_197-207 12
+49579_periderm/epidermis_237-242 12
+50351_periderm/epidermis_243-247 14
+50816_periderm/epidermis_272-286 16
+50816_periderm/epidermis_300-304 3
+51334_periderm/epidermis_236-243 18
+51334_periderm/epidermis_287-291 9
+51620_periderm/epidermis_360-366 4
+51872_periderm/epidermis_271-275 11
+52075_periderm/epidermis_277-281 14
+52075_periderm/epidermis_324-333 6
+52075_periderm/epidermis_335-340 12
+52075_periderm/epidermis_342-349 25
+52178_periderm/epidermis_162-167 14
+52937_periderm/epidermis_261-270 18
+53150_periderm/epidermis_172-179 12
+53175_periderm/epidermis_191-195 27
+53175_periderm/epidermis_224-234 6
+53386_periderm/epidermis_217-224 18
+53386_periderm/epidermis_302-308 3
+53805_periderm/epidermis_411-422 29
+53805_periderm/epidermis_455-461 29
+56782_periderm/epidermis_247-252 29
+56782_periderm/epidermis_274-280 18
+56834_periderm/epidermis_177-182 17
+58344_periderm/epidermis_205-210 11
+58344_periderm/epidermis_224-232 11
+59233_periderm/epidermis_160-167 12
+59233_periderm/epidermis_173-178 0
+59233_periderm/epidermis_194-199 18
+59233_periderm/epidermis_296-300 27
+61678_periderm/epidermis_243-249 12
+61715_periderm/epidermis_196-200 10
+61715_periderm/epidermis_328-335 7
+62189_periderm/epidermis_248-253 12
+62189_periderm/epidermis_277-282 6
+62189_periderm/epidermis_292-302 12
+62759_periderm/epidermis_485-490 3
+49455_primary neuron_169-174 2
+49455_primary neuron_194-204 12
+49455_primary neuron_216-221 7
+49455_primary neuron_227-233 12
+49455_primary neuron_329-334 12
+49459_primary neuron_206-221 7
+49466_primary neuron_364-376 16
+49480_primary neuron_175-188 2
+49484_primary neuron_463-470 29
+49484_primary neuron_475-480 27
+49520_primary neuron_217-221 18
+49520_primary neuron_225-230 8
+49520_primary neuron_283-289 3
+49520_primary neuron_321-325 26
+49549_primary neuron_217-224 12
+49549_primary neuron_317-326 11
+49577_primary neuron_255-259 27
+49579_primary neuron_197-207 12
+49579_primary neuron_237-242 12
+50351_primary neuron_5-10 3
+50351_primary neuron_243-247 14
+50455_primary neuron_330-334 19
+50455_primary neuron_380-385 16
+50816_primary neuron_272-287 16
+50816_primary neuron_299-304 16
+51334_primary neuron_174-180 18
+51334_primary neuron_236-243 18
+51334_primary neuron_280-285 18
+51334_primary neuron_287-291 9
+51620_primary neuron_360-369 4
+51872_primary neuron_271-276 11
+51872_primary neuron_277-282 24
+51872_primary neuron_309-313 5
+52075_primary neuron_324-333 6
+52075_primary neuron_335-340 12
+52075_primary neuron_342-349 25
+52178_primary neuron_162-166 14
+52178_primary neuron_271-276 18
+52178_primary neuron_308-313 12
+52696_primary neuron_244-250 5
+52696_primary neuron_350-363 5
+52937_primary neuron_262-270 18
+53150_primary neuron_172-179 12
+53150_primary neuron_228-233 18
+53175_primary neuron_191-195 27
+53175_primary neuron_198-204 5
+53175_primary neuron_224-234 6
+53175_primary neuron_374-380 10
+53386_primary neuron_200-204 14
+53386_primary neuron_217-224 18
+53386_primary neuron_299-310 3
+53805_primary neuron_333-344 29
+53805_primary neuron_377-383 29
+53805_primary neuron_411-422 29
+53805_primary neuron_455-461 29
+53899_primary neuron_344-354 29
+53899_primary neuron_385-394 29
+53899_primary neuron_424-433 29
+54169_primary neuron_224-232 11
+54169_primary neuron_249-254 5
+55357_primary neuron_244-249 26
+55733_primary neuron_241-246 16
+55733_primary neuron_288-292 20
+55733_primary neuron_325-331 5
+56229_primary neuron_222-228 16
+56229_primary neuron_264-269 5
+56229_primary neuron_389-394 16
+56782_primary neuron_194-202 5
+56782_primary neuron_247-253 29
+56782_primary neuron_274-280 18
+56782_primary neuron_289-293 5
+56834_primary neuron_143-149 2
+56834_primary neuron_177-182 17
+58344_primary neuron_205-210 11
+58344_primary neuron_224-234 11
+59233_primary neuron_160-170 12
+59233_primary neuron_173-178 0
+59233_primary neuron_194-199 18
+59233_primary neuron_296-300 27
+61678_primary neuron_243-249 12
+61678_primary neuron_269-274 14
+61678_primary neuron_371-382 4
+61715_primary neuron_196-200 10
+61715_primary neuron_328-341 7
+62189_primary neuron_148-152 5
+62189_primary neuron_228-233 15
+62189_primary neuron_248-253 12
+62189_primary neuron_277-281 6
+62189_primary neuron_289-302 12
+62759_primary neuron_485-490 3
+49455_segmental plate_170-174 2
+49455_segmental plate_194-204 12
+49455_segmental plate_216-221 7
+49455_segmental plate_227-233 12
+49455_segmental plate_329-334 12
+49459_segmental plate_206-213 7
+49466_segmental plate_364-376 16
+49484_segmental plate_475-480 27
+49520_segmental plate_225-230 8
+49520_segmental plate_244-249 14
+49520_segmental plate_283-289 3
+49520_segmental plate_321-325 26
+49549_segmental plate_317-324 11
+49577_segmental plate_255-259 27
+49577_segmental plate_261-267 1
+49579_segmental plate_197-207 12
+49579_segmental plate_237-242 12
+50351_segmental plate_5-10 3
+50351_segmental plate_243-247 14
+50816_segmental plate_272-286 16
+50816_segmental plate_299-304 16
+51334_segmental plate_175-180 18
+51334_segmental plate_236-243 18
+51334_segmental plate_287-291 9
+51620_segmental plate_360-366 4
+51620_segmental plate_386-391 28
+51872_segmental plate_267-276 5
+51872_segmental plate_307-313 5
+52075_segmental plate_276-281 14
+52075_segmental plate_316-320 20
+52075_segmental plate_324-333 6
+52075_segmental plate_335-340 12
+52075_segmental plate_342-349 25
+52178_segmental plate_162-166 14
+52178_segmental plate_278-283 2
+52178_segmental plate_308-313 12
+52178_segmental plate_402-406 3
+52696_segmental plate_178-182 5
+52696_segmental plate_244-249 5
+52696_segmental plate_354-359 5
+52937_segmental plate_261-270 18
+53150_segmental plate_172-179 12
+53150_segmental plate_228-233 18
+53175_segmental plate_191-195 27
+53175_segmental plate_198-204 5
+53175_segmental plate_224-234 6
+53386_segmental plate_200-204 14
+53386_segmental plate_217-224 18
+53386_segmental plate_299-310 3
+53805_segmental plate_377-383 29
+53805_segmental plate_411-422 29
+53805_segmental plate_455-461 29
+53899_segmental plate_344-354 29
+54169_segmental plate_224-230 11
+54169_segmental plate_299-304 5
+55357_segmental plate_244-249 26
+55733_segmental plate_325-331 5
+56229_segmental plate_222-226 11
+56229_segmental plate_264-269 5
+56782_segmental plate_194-202 5
+56782_segmental plate_247-253 29
+56782_segmental plate_274-280 18
+56782_segmental plate_289-293 5
+56834_segmental plate_143-149 2
+56834_segmental plate_177-182 17
+58344_segmental plate_205-210 11
+58344_segmental plate_210-214 9
+58344_segmental plate_224-234 11
+59233_segmental plate_160-170 12
+59233_segmental plate_173-178 0
+59233_segmental plate_194-199 18
+59233_segmental plate_296-300 27
+61678_segmental plate_228-232 8
+61678_segmental plate_243-249 12
+61678_segmental plate_377-382 4
+61715_segmental plate_196-200 10
+61715_segmental plate_326-335 7
+62189_segmental plate_148-152 5
+62189_segmental plate_228-237 15
+62189_segmental plate_248-253 12
+62189_segmental plate_253-259 21
+62189_segmental plate_277-282 6
+62189_segmental plate_289-302 12
+62759_segmental plate_485-490 3
+49455_YSL_194-204 12
+49455_YSL_216-221 7
+49455_YSL_227-233 12
+49455_YSL_329-334 12
+49459_YSL_206-219 7
+49466_YSL_302-307 6
+49466_YSL_364-376 16
+49466_YSL_378-384 16
+49480_YSL_175-183 2
+49484_YSL_475-480 27
+49520_YSL_215-221 18
+49520_YSL_284-289 3
+49520_YSL_321-325 26
+49577_YSL_255-259 27
+49577_YSL_261-267 1
+49579_YSL_197-207 12
+49579_YSL_216-221 13
+49579_YSL_237-242 12
+50351_YSL_243-247 14
+50455_YSL_380-392 16
+50816_YSL_274-287 16
+50816_YSL_299-304 16
+51334_YSL_174-180 18
+51334_YSL_236-243 18
+51334_YSL_280-285 18
+51620_YSL_360-366 4
+51620_YSL_386-391 28
+51872_YSL_271-276 11
+52075_YSL_277-281 14
+52075_YSL_324-340 6
+52075_YSL_342-349 25
+52178_YSL_162-167 14
+52178_YSL_271-276 18
+52178_YSL_308-313 12
+52696_YSL_354-359 5
+52937_YSL_261-270 18
+53150_YSL_172-179 12
+53150_YSL_228-235 18
+53175_YSL_198-204 5
+53175_YSL_224-234 6
+53175_YSL_375-380 10
+53386_YSL_200-204 14
+53386_YSL_217-224 18
+53386_YSL_299-310 3
+53805_YSL_377-383 29
+53805_YSL_411-422 29
+53805_YSL_455-461 29
+53899_YSL_344-354 29
+53899_YSL_388-394 29
+56229_YSL_222-228 16
+56229_YSL_389-394 16
+56782_YSL_247-253 29
+56782_YSL_274-280 18
+56834_YSL_143-149 2
+58344_YSL_205-210 11
+58344_YSL_224-234 11
+59233_YSL_160-170 12
+59233_YSL_173-178 0
+59233_YSL_193-201 12
+59233_YSL_226-232 8
+59233_YSL_296-300 27
+61678_YSL_243-249 12
+61678_YSL_377-382 4
+61715_YSL_194-200 10
+61715_YSL_326-339 7
+62189_YSL_227-233 15
+62189_YSL_248-253 12
+62189_YSL_277-281 6
+62189_YSL_292-302 12
+62759_YSL_485-490 3
