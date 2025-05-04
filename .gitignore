@@ -3,6 +3,7 @@
 data/atac_all.metaData.txt
 data/Cell-type_Peak_Matrix.rds
 data/psd.bulk.zfish_atac.10hpf.lg1x.csv
+data/motif_databases/
 papers/
 docs/gReLU_tutorials/
 docs/gReLU
