@@ -19,3 +19,5 @@ notebooks/multi_task_1/
 notebooks/multi_task_DilatedConvModel/
 notebooks/multi_task_ConvMLPModel/
 results/archive
+src/stf_tools/__pycache__
+src/stf_tools.egg-info
