@@ -17,7 +17,7 @@ The repository has the following folders:
 
 ## Introduction
 
-Neural crest cells are multipotent cells [(Fabian et.al., 2022)](https://www.nature.com/articles/s41467-021-27594-w).
+Neural crest cells are multipotent cells ([Fabian et.al., 2022)](https://www.nature.com/articles/s41467-021-27594-w)).
 
 ## Data
 
