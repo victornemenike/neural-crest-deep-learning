@@ -6,7 +6,7 @@ This repository contains documentation and code for my lab rotation research tit
 
 ## Contents
 
-The repository has the following folders:
+The repository has the following key folders:
 
 - `data/` - Datasets
 - `notebooks/` - Notebooks used for data analysis
@@ -37,7 +37,7 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 
 ![gReLU workflow](media/grelu_flowchart.jpg)
 
-![explainable AI](media/model_interpretation.png)
+![integrated_gradients](media/integrated_gradients.png)
 
 ## Results
 
