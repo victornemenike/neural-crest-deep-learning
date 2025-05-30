@@ -17,9 +17,9 @@ The repository has the following folders:
 
 ## Introduction
 
-Neural crest cells (NCCs) are multipotent cells that were first described in 1886 as "Zwischenstrang" (the intermediate strand) by the Swiss embryologist Wilheim His ([Achilleos et.al., 2012](https://www.nature.com/articles/cr201211)). The name "Zwischenstrang" stems from the their location betweeen the dorsal ectoderm and the neural tube in vertebrate embryos, but was later renamed to neural crest cells by Arthur Milnes Marshall due to the more precise description of its anatomical position along the border of the neural plate during early verbrate development ([Achilleos et.al., 2012](https://www.nature.com/articles/cr201211), [Soto et.al., 2012](https://stemcellsjournals.onlinelibrary.wiley.com/doi/10.1002/sctm.20-0361)). 
-NCCs are transient, multipotent cells that are capable of forming diverse cell types during vertebrate embryogenesis ([Fabian et.al., 2022](https://www.nature.com/articles/s41467-021-27594-w)). Due to the extraordinary multipotent abilities of NCCs, understanding the underlying transcription factors  NCCs could lead to understanding of key cells during vertebrate embryogenesis. 
+Neural crest cells (NCCs) are transient, multipotent cells that are capable of forming diverse cell types during vertebrate embryogenesis ([Fabian et.al., 2022](https://www.nature.com/articles/s41467-021-27594-w)).  NCCs were first described in 1886 as "Zwischenstrang" (the intermediate strand) by the Swiss embryologist Wilheim His due to their location betweeen the dorsal ectoderm and the neural tube in vertebrate embryos, but were later renamed to neural crest cells by Arthur Milnes Marshall due to the more precise description of its anatomical position along the border of the neural plate during early verbrate development ([Achilleos et.al., 2012](https://www.nature.com/articles/cr201211), [Soto et.al., 2012](https://stemcellsjournals.onlinelibrary.wiley.com/doi/10.1002/sctm.20-0361)). While most authors label NCCs as stem cells, [Achilleos et.al., 2012](https://www.nature.com/articles/cr201211) states that the majority of NCCs are actually progenitor cells. Despite the semantic nuances, identifying the underlying transcription factors/regulatory motifs that are crucial for the multipotency of NCCs will lead to broadening our understanding of vertebrate development and disease. 
 
+Recent advances in large-scale functional genomic datasets and deep learning have led to **sequence-to-function models** ([Sasse et.al., 2024](https://www.nature.com/articles/s41592-024-02331-5)). Sequence-to-function models are typically supervised machine learning approaches that utilize deep learning architectures such as convolutional neural networks or transformers to learn a mapping between DNA sequence (inputs) and functional readouts (outputs) such as chromatin accessibility, ATAC peaks, histone modification, gene expression, etc. ([Sasse et.al., 2024](https://www.nature.com/articles/s41592-024-02331-5)). Once this mapping is learnt, the models can be used to predict the impact of various genetic variations  on the gene regulation of various cell types. Furthermore, explainable AI (xAI) approaches can be applied to these models to identify key regulatory motifs that are associated with the specfic functional readouts ([Novakovsky et.al., 2023](https://www.nature.com/articles/s41576-022-00532-2)).  Therefore, the goal of this work is to ascertain if such sequence-to-function models could be used to elucidate the key transcription factors/regulatory motifs that are crucial for neural crest cells.
 
 ## Data
 
@@ -70,8 +70,12 @@ This will run the file `setup.py`, install a package called `stf_tools` that con
 
 ## References
 
-1. Achilleos, A. and Trainor, P.A., 2012. Neural crest stem cells: discovery, properties and potential for therapy. _Cell research_, 22(2), pp.288-304.
+1. Achilleos, A. and Trainor, P.A., 2012. Neural crest stem cells: discovery, properties and potential for therapy. _Cell research, 22(2)_, pp.288-304.
 
-2. Soto, J., Ding, X., Wang, A. and Li, S., 2021. Neural crest-like stem cells for tissue regeneration. _Stem Cells Translational Medicine_, 10(5), pp.681-693.
+2. Soto, J., Ding, X., Wang, A. and Li, S., 2021. Neural crest-like stem cells for tissue regeneration. _Stem Cells Translational Medicine, 10(5)_, pp.681-693.
 
 3. Fabian, P., Tseng, K.C., Thiruppathy, M., Arata, C., Chen, H.J., Smeeton, J., Nelson, N. and Crump, J.G., 2022. Lifelong single-cell profiling of cranial neural crest diversification in zebrafish. _Nature communications, 13(1)_, p.13.
+
+4. Sasse, A., Chikina, M. and Mostafavi, S., 2024. Unlocking gene regulation with sequence-to-function models. _Nature methods, 21(8)_, pp.1374-1377.
+
+5. Novakovsky, G., Dexter, N., Libbrecht, M.W., Wasserman, W.W. and Mostafavi, S., 2023. Obtaining genetics insights from deep learning via explainable artificial intelligence. _Nature Reviews Genetics, 24(2)_, pp.125-137.
