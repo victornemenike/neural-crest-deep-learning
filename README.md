@@ -37,7 +37,7 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 
 ![gReLU workflow](media/grelu_flowchart.jpg)
 
-![integrated_gradients](media/integrated_gradients.png)
+![explainable AI](media/model_interpretation.png)
 
 ## Results
 
