@@ -35,11 +35,17 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 
 ## Methodology
 
+### Sequence-to-function modelling with gReLU
 ![gReLU workflow](media/grelu_flowchart.jpg)
 
+### Integrated gradients for model interpretation
 ![integrated gradients](media/integrated_gradients.svg)
 
 ## Results
+
+### Model performance
+
+### Sequence-to-function identifies key regulatory motifs for neural crest cells
 
 ## Discussion
 
