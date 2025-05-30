@@ -21,6 +21,9 @@ Neural crest cells (NCCs) are transient, multipotent cells that are capable of f
 
 Recent advances in large-scale functional genomic datasets and deep learning have led to **sequence-to-function models** ([Sasse et.al., 2024](https://www.nature.com/articles/s41592-024-02331-5)). Sequence-to-function models are typically supervised machine learning approaches that utilize deep learning architectures (convolutional neural networks or transformers) to learn a mapping between DNA sequence (inputs) and functional readouts (outputs) such as chromatin accessibility, ATAC peaks, histone modification, gene expression, etc. ([Sasse et.al., 2024](https://www.nature.com/articles/s41592-024-02331-5)). Once this mapping is learnt, the models can be used to predict the impact of various genetic variations  on the gene regulation of various cell types. Furthermore, explainable AI (xAI) approaches can be applied to these models to identify key regulatory motifs that are associated with the specfic functional readouts ([Novakovsky et.al., 2023](https://www.nature.com/articles/s41576-022-00532-2)).  Therefore, the goal of this work is to ascertain if such sequence-to-function models could be used to elucidate the key transcription factors/regulatory motifs that are crucial for neural crest cells.
 
+
+![neural crest cells](media/neural_crest_cells.svg)
+
 ## Data
 
 The main dataset used in this work is a single-nucleus assay for transposase-accessible chromatin with high throughput sequencing (snATAC-seq) dataset during zebrafish early embryogenesis ([Lin et.al., 2023](https://www.nature.com/articles/s41597-023-02373-y)). The snATAC-seq was generated at seven different time points of the first day of zebrafish embryogenesis, leading to accessibility profiles for 51,620 nuclei. The following two datasets were downloaded from the supplementary files:
