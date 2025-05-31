@@ -111,3 +111,7 @@ This will run the file `setup.py`, install a package called `stf_tools` that con
 5. Novakovsky, G., Dexter, N., Libbrecht, M.W., Wasserman, W.W. and Mostafavi, S., 2023. Obtaining genetics insights from deep learning via explainable artificial intelligence. _Nature Reviews Genetics, 24(2)_, pp.125-137.
 
 6. Lin, X., Yang, X., Chen, C., Ma, W., Wang, Y., Li, X., Zhao, K., Deng, Q., Feng, W., Ma, Y. and Wang, H., 2023. Single-nucleus chromatin landscapes during zebrafish early embryogenesis. _Scientific Data, 10(1)_, p.464.
+
+7. Sasse, A., Ng, B., Spiro, A.E., Tasaki, S., Bennett, D.A., Gaiteri, C., De Jager, P.L., Chikina, M. and Mostafavi, S., 2023. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. _Nature genetics, 55(12)_, pp.2060-2064.
+
+8. Lal, A., Gunsalus, L., Nair, S., Biancalani, T. and Eraslan, G., 2024. gReLU: A comprehensive framework for DNA sequence modeling and design. _bioRxiv_, pp.2024-09.
