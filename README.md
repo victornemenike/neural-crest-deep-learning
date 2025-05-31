@@ -44,7 +44,9 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 
 ### Sequence-to-function modelling with gReLU
 
-The sequence-to-function model used is a convolutional tower followed by a Multi-head perceptron (MLP) layer architecture
+The sequence-to-function model used is a convolutional tower followed by a Multi-head perceptron (MLP) layer architecture. This model was implemented in the [gReLU](https://github.com/Genentech/gReLU) Python package developed by Genentech ([Lal et al., 2024](https://www.biorxiv.org/content/10.1101/2024.09.18.613778v1)). Before training the model, the data from converted into a `anndata` type ([Virshup et al., 2024](https://joss.theoj.org/papers/10.21105/joss.04371)). The regulatory motifs for Zebra fish (Danio Rerio) were obtained from the [`SwissRegulon Portal`](https://swissregulon.unibas.ch/data/dr11/dr11_weight_matrices) as produced by [Baranasic et al. 2022](https://doi.org/10.1038/s41588-022-01089-w).
+
+Furthermore, the regulatory motifs (weight matrices) were converted from its original TRANSFAC 'matrix.dat' file into a MEME motif file by using the `transfac2meme` motif conversion utility from the [`The MEME Suite`](https://web.mit.edu/meme_v4.11.4/share/doc/transfac2meme.html). The final MEME file has been stored in the `data` folder as `danRer11.meme`. The training of the convolutional tower archiecture can be found in the `multi_task_model_ConvMLPModel.ipynb` Jupyter notebook in the [notebooks](https://github.com/sasselab/Rotation_VictorEmenike_2025-03-03/tree/main/notebooks) folder. All training where done in a GPU.
 
 ![seq2fxn_modelling](media/seq2fxn_modelling.svg)
 
@@ -112,11 +114,11 @@ This will run the file `setup.py`, install a package called `stf_tools` that con
 
 ## References
 
-1. Achilleos, A. and Trainor, P.A., 2012. Neural crest stem cells: discovery, properties and potential for therapy. _Cell research, 22(2)_, pp.288-304.
+1. Achilleos, A. and Trainor, P.A., 2012. Neural crest stem cells: discovery, properties and potential for therapy. _Cell Research, 22(2)_, pp.288-304.
 
 2. Soto, J., Ding, X., Wang, A. and Li, S., 2021. Neural crest-like stem cells for tissue regeneration. _Stem Cells Translational Medicine, 10(5)_, pp.681-693.
 
-3. Fabian, P., Tseng, K.C., Thiruppathy, M., Arata, C., Chen, H.J., Smeeton, J., Nelson, N. and Crump, J.G., 2022. Lifelong single-cell profiling of cranial neural crest diversification in zebrafish. _Nature communications, 13(1)_, p.13.
+3. Fabian, P., Tseng, K.C., Thiruppathy, M., Arata, C., Chen, H.J., Smeeton, J., Nelson, N. and Crump, J.G., 2022. Lifelong single-cell profiling of cranial neural crest diversification in zebrafish. _Nature Communications, 13(1)_, p.13.
 
 4. Sasse, A., Chikina, M. and Mostafavi, S., 2024. Unlocking gene regulation with sequence-to-function models. _Nature methods, 21(8)_, pp.1374-1377.
 
@@ -124,6 +126,10 @@ This will run the file `setup.py`, install a package called `stf_tools` that con
 
 6. Lin, X., Yang, X., Chen, C., Ma, W., Wang, Y., Li, X., Zhao, K., Deng, Q., Feng, W., Ma, Y. and Wang, H., 2023. Single-nucleus chromatin landscapes during zebrafish early embryogenesis. _Scientific Data, 10(1)_, p.464.
 
-7. Sasse, A., Ng, B., Spiro, A.E., Tasaki, S., Bennett, D.A., Gaiteri, C., De Jager, P.L., Chikina, M. and Mostafavi, S., 2023. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. _Nature genetics, 55(12)_, pp.2060-2064.
+7. Sasse, A., Ng, B., Spiro, A.E., Tasaki, S., Bennett, D.A., Gaiteri, C., De Jager, P.L., Chikina, M. and Mostafavi, S., 2023. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. _Nature Genetics, 55(12)_, pp.2060-2064.
 
 8. Lal, A., Gunsalus, L., Nair, S., Biancalani, T. and Eraslan, G., 2024. gReLU: A comprehensive framework for DNA sequence modeling and design. _bioRxiv_, pp.2024-09.
+
+9. Virshup, I., Rybakov, S., Theis, F.J., Angerer, P. and Wolf, F.A., 2024. anndata: Access and store annotated data matrices. _Journal of Open Source Software, 9(101)_, p.4371.
+
+10. Baranasic, D., Hörtenhuber, M., Balwierz, P.J., Zehnder, T., Mukarram, A.K., Nepal, C., Várnai, C., Hadzhiev, Y., Jimenez-Gonzalez, A., Li, N. and Wragg, J., 2022. Multiomic atlas with functional stratification and developmental dynamics of zebrafish cis-regulatory elements. _Nature Genetics, 54(7)_, pp.1037-1050.
