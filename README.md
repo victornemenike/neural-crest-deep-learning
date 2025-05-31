@@ -53,6 +53,9 @@ Furthermore, the regulatory motifs (weight matrices) were converted from its ori
 ![gReLU workflow with caption](media/grelu_workflow_w_caption.svg)
 
 ###  Model interpretation with integrated gradients
+
+In order to determine the regulatory motifs, it is important to determine the feature attributions on the model. These feature attributions approaches are based on propagating pertubed data through the model and observing the effect on the model's predictions. In this work, a backward propagation method called _intergrated gradients_ was used. Integrated gradients involves calculating the gradient of the sequence-to-function model's output with respect to the input sequence by using backward propagation. Usually, the gradients obtained as multiplied by the input sequence to only focus on the nucleotides that are present in the sequence ([Novakovsky et.al., 2023](https://www.nature.com/articles/s41576-022-00532-2)). The implementation of integrated gradients used was based on the [Captum](https://captum.ai) implementation and be found in the [src/src_tools/utils.py](https://github.com/sasselab/Rotation_VictorEmenike_2025-03-03/blob/main/src/stf_tools/utils.py) file. Other feature attribution methods that could be used are forward propagation approaches such as _in silico mutagenesis_ (ISM). ISM was initially considered in this work, but it was decided against due to its high computational cost (results not shown). 
+
 ![integrated gradients](media/integrated_gradients.svg)
 
 ## Results
