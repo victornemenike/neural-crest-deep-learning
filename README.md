@@ -63,6 +63,8 @@ The sequence-to-function model used is a convolutional tower followed by a Multi
 
 ### Sequence-to-function identifies key regulatory motifs for neural crest cells
 
+![attributions](media/attributions.svg)
+
 ## Discussion
 
 ## **Quick Start**
