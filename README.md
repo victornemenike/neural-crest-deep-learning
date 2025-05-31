@@ -44,6 +44,8 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 
 ### Sequence-to-function modelling with gReLU
 
+The sequence-to-function model used is a convolutional tower followed by a Multi-head perceptron (MLP) layer architecture
+
 ![seq2fxn_modelling](media/seq2fxn_modelling.svg)
 
 ![gReLU workflow with caption](media/grelu_workflow_w_caption.svg)
@@ -54,6 +56,10 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 ## Results
 
 ### Model performance
+
+![R coefficient bar plot](media/pearson_R_barplot.svg)
+
+![parity plots_model_performance](media/evalulation_parity_plots.svg)
 
 ### Sequence-to-function identifies key regulatory motifs for neural crest cells
 
