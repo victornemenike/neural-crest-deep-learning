@@ -65,6 +65,10 @@ The sequence-to-function model used is a convolutional tower followed by a Multi
 
 ![attributions](media/attributions.svg)
 
+![motif clustering](media/clustering_motifs.svg)
+
+![important motifs](media/key_motifs.svg)
+
 ## Discussion
 
 ## **Quick Start**
