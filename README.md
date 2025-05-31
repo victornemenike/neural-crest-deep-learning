@@ -44,7 +44,7 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 
 ### Sequence-to-function modelling with gReLU
 
-The sequence-to-function model used is a convolutional tower followed by a Multi-head perceptron (MLP) layer architecture. This model was implemented in the [gReLU](https://github.com/Genentech/gReLU) Python package developed by Genentech ([Lal et al., 2024](https://www.biorxiv.org/content/10.1101/2024.09.18.613778v1)). Before training the model, the data from converted into a `anndata` type ([Virshup et al., 2024](https://joss.theoj.org/papers/10.21105/joss.04371)). The regulatory motifs for Zebra fish (Danio Rerio) were obtained from the [`SwissRegulon Portal`](https://swissregulon.unibas.ch/data/dr11/dr11_weight_matrices) as produced by [Baranasic et al. 2022](https://doi.org/10.1038/s41588-022-01089-w).
+The sequence-to-function model used is a convolutional tower followed by a Multi-head perceptron (MLP) layer architecture. This model is a multi-task model that was trained across 15 cell types in the zebrafish data by using the [gReLU](https://github.com/Genentech/gReLU) Python package developed by Genentech ([Lal et al., 2024](https://www.biorxiv.org/content/10.1101/2024.09.18.613778v1)). Before training the model, the data from converted into a `anndata` type ([Virshup et al., 2024](https://joss.theoj.org/papers/10.21105/joss.04371)). The regulatory motifs for Zebra fish (Danio Rerio) were obtained from the [`SwissRegulon Portal`](https://swissregulon.unibas.ch/data/dr11/dr11_weight_matrices) as produced by [Baranasic et al. 2022](https://doi.org/10.1038/s41588-022-01089-w).
 
 Furthermore, the regulatory motifs (weight matrices) were converted from its original TRANSFAC 'matrix.dat' file into a MEME motif file by using the `transfac2meme` motif conversion utility from the [`The MEME Suite`](https://web.mit.edu/meme_v4.11.4/share/doc/transfac2meme.html). The final MEME file has been stored in the `data` folder as `danRer11.meme`. The training of the convolutional tower archiecture can be found in the `multi_task_model_ConvMLPModel.ipynb` Jupyter notebook in the [notebooks](https://github.com/sasselab/Rotation_VictorEmenike_2025-03-03/tree/main/notebooks) folder. All training where done in a GPU.
 
@@ -62,11 +62,15 @@ In order to determine the regulatory motifs, it is important to determine the fe
 
 ### Model performance
 
+The model performance of the trained sequence-to-function, multi-task model can be found in Figures 7 and 8. In Figure 7, we observe that the ATAC seq peaks in the central nervous system cell type have the best Pearson correlation coefficient. Moreover, the Pearson correlation coefficient of neural crest cells is about 0.43. This indicates a moderate predictive power of the currently trained model for at least the neural crest cells. Nevertheless, this predictive power was deemed sufficient to ascertain the key motifs for the cis-regulatory control of neural crest cells.
+
 ![R coefficient bar plot](media/pearson_R_barplot.svg)
 
 ![parity plots_model_performance](media/evalulation_parity_plots.svg)
 
 ### Sequence-to-function identifies key regulatory motifs for neural crest cells
+
+By using the aformentioned multi-task model, attributions for the neural crest cells were generated (see Figure 9). Subsequently, these attributions for the test data set were clustered into motifs as shown in Figures 10 and 11. In Figure 11, we identify key motifs that are expressed in neural crest cells such as znf740 and sox10 ([Keuls et al., 2023](https://www.pnas.org/doi/abs/10.1073/pnas.2212578120), [Soto et.al., 2012](https://stemcellsjournals.onlinelibrary.wiley.com/doi/10.1002/sctm.20-0361)). Furthermore, motifs associated with Krüppel-like transcription factors such as klf4, klf5l, klf6a, and klf6b were identified. These Krüppel-like associated motifs have been shown to play essential roles in regulating the multipotency and formation neural crest cells ([Rigney et al., 2025](https://journals.biologists.com/dev/article/152/9/dev204634/367869)). Finally, motifs associated with GATA3 were also identified ([Abe at al., 2021](https://journals.biologists.com/dev/article/148/17/dev199534/272076/GATA3-is-essential-for-separating-patterning)). GATA3 is a member of GATA family of zinc-finger transcription factors and has been found to be present in neural crest cells in the mandibular and maxillary (jaw) regions. They also play an important role in facial morphogenesis during early veterbrate embryogenesis.
 
 ![attributions](media/attributions.svg)
 
@@ -136,3 +140,9 @@ This will run the file `setup.py`, install a package called `stf_tools` that con
 9. Virshup, I., Rybakov, S., Theis, F.J., Angerer, P. and Wolf, F.A., 2024. anndata: Access and store annotated data matrices. _Journal of Open Source Software, 9(101)_, p.4371.
 
 10. Baranasic, D., Hörtenhuber, M., Balwierz, P.J., Zehnder, T., Mukarram, A.K., Nepal, C., Várnai, C., Hadzhiev, Y., Jimenez-Gonzalez, A., Li, N. and Wragg, J., 2022. Multiomic atlas with functional stratification and developmental dynamics of zebrafish cis-regulatory elements. _Nature Genetics, 54(7)_, pp.1037-1050.
+
+11. Keuls, R.A., Oh, Y.S., Patel, I. and Parchem, R.J., 2023. Post-transcriptional regulation in cranial neural crest cells expands developmental potential. _Proceedings of the National Academy of Sciences, 120(6)_, p.e2212578120.
+
+12. Rigney, S., York, J.R. and LaBonne, C., 2025. Krüppel-like factors play essential roles in regulating pluripotency and the formation of neural crest stem cells. _Development, 152(9)_, p.dev204634.
+
+13. Abe, M., Cox, T.C., Firulli, A.B., Kanai, S.M., Dahlka, J., Lim, K.C., Engel, J.D. and Clouthier, D.E., 2021. GATA3 is essential for separating patterning domains during facial morphogenesis. _Development, 148(17)_, p.dev199534.
