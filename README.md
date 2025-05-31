@@ -43,7 +43,7 @@ After pseudo-bulking, it was observed that cells in the central nervous system c
 ## Methodology
 
 ### Sequence-to-function modelling with gReLU
-![gReLU workflow](media/grelu_flowchart.jpg)
+![seq2fxn workflow](media/seq2fxn_model_workflow.svg)
 
 ###  Model interpretation with integrated gradients
 ![integrated gradients](media/integrated_gradients.svg)
