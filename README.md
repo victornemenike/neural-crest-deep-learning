@@ -119,7 +119,7 @@ This will run the file `setup.py`, install a package called `stf_tools` that con
 
 5. **Running the pipeline**
 
-- Navigate to the folder `notebooks`. Open the jupyter notebook `multi_task_model_ConvMLPModel.ipynb`. To train the model from scratch, set `training = True ` in the notebook, otherwise leave it as `training = False` to use an existing model checkpoint.
+- Navigate to the folder `notebooks`. Open the jupyter notebook `multi_task_model_ConvMLPModel.ipynb`. To train the model from scratch, set `training = True ` in the notebook. Otherwise, set `training = False` to use an existing model checkpoint.
 
 
 
