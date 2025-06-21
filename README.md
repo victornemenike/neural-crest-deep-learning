@@ -1,8 +1,8 @@
-# Lab Rotation Research
+# Understanding Cis-Regulatory Control of Neural Crest Cell Development with Deep Learning
 
 ## Overview
 
-This repository contains documentation and code for my lab rotation research titled _"Understanding Cis-Regulatory Control of Neural Crest Cell Development with Deep Learning"_.
+This repository contains documentation and code for a research project titled _"Understanding Cis-Regulatory Control of Neural Crest Cell Development with Deep Learning"_.
 
 ## Contents
 
